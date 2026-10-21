@@ -1,0 +1,24 @@
+{
+  "name": "hayat-al-imam-al-kadhim",
+  "private": true,
+  "version": "1.0.0",
+  "description": "موقع هيئة أحفاد الإمام الكاظم (ع)، النجف الأشرف، طرف الإسكان",
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run i18n:check && vite build",
+    "preview": "vite preview",
+    "i18n:check": "node scripts/i18n-check.js",
+    "images": "python scripts/optimize-images.py"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}

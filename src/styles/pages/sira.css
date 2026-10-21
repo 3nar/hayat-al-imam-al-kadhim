@@ -1,0 +1,245 @@
+/* ==========================================================================
+   صفحة السيرة: صورة في قوسٍ مثبّت تتبدّل مع الفصول، والنص يجري بجانبها
+   ========================================================================== */
+
+.story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 27rem);
+  grid-template-areas: "text media";
+  gap: clamp(var(--sp-7), 6vw, var(--sp-10));
+  align-items: start;
+}
+
+.story__text {
+  grid-area: text;
+  min-inline-size: 0;
+}
+
+.story__media {
+  grid-area: media;
+  block-size: 100%;
+}
+
+.story__sticky {
+  position: sticky;
+  inset-block-start: calc(var(--header-h) + 9vh);
+  display: grid;
+  gap: var(--sp-5);
+  padding: 10px;
+}
+
+.story__sticky .arch {
+  inline-size: min(100%, 66vh * 0.8);
+  margin-inline: auto;
+}
+
+.arch__media img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1.4s var(--ease-solemn), transform 6s var(--ease-solemn);
+}
+
+.arch__media img.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.story__caption {
+  color: var(--text-muted);
+  font-size: var(--fs-200);
+  text-align: center;
+  transition: opacity 0.6s var(--ease-solemn);
+}
+
+.story__caption::before,
+.story__caption::after {
+  content: "";
+  display: inline-block;
+  inline-size: 7px;
+  block-size: 7px;
+  margin-inline: var(--sp-3);
+  background: var(--gold-700);
+  rotate: 45deg;
+  vertical-align: 0.2em;
+}
+
+.episode {
+  padding-block: var(--sp-8) var(--sp-9);
+}
+
+.episode + .episode {
+  border-block-start: 1px solid var(--ink-600);
+}
+
+.episode__figure {
+  display: none;
+}
+
+.episode__title {
+  margin-block-end: var(--sp-5);
+  font-family: var(--font-display);
+  font-size: var(--fs-700);
+  font-weight: 700;
+  line-height: var(--lh-display);
+  color: var(--gold-300);
+}
+
+.episode .prose {
+  max-inline-size: var(--measure);
+}
+
+/* ---------- سلسلة السجون ---------- */
+.chain {
+  --ring-w: 30px;
+  --ring-h: 46px;
+  --col: 64px;
+  display: grid;
+  margin: var(--sp-7) 0;
+  padding: 0;
+}
+
+.chain__link {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--col) 1fr;
+  gap: var(--sp-4);
+  align-items: center;
+  min-block-size: 84px;
+}
+
+/* الحلقة الجانبية التي تربط حلقتين، تُرى من حافتها */
+.chain__link:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: calc(var(--col) / 2 - 4px);
+  inset-block-start: calc(50% + var(--ring-h) / 2 - 12px);
+  inline-size: 8px;
+  block-size: calc(100% - var(--ring-h) + 24px);
+  border-radius: 4px;
+  background: linear-gradient(90deg, #1d1611, #7a6345 45%, #a68a5f 55%, #2a2018);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.chain__ring {
+  position: relative;
+  z-index: 1;
+  justify-self: center;
+  inline-size: var(--ring-w);
+  block-size: var(--ring-h);
+  border: 5px solid #6d5a43;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 220, 160, 0.22),
+    inset 2px 3px 4px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(0, 0, 0, 0.6),
+    0 6px 12px rgba(0, 0, 0, 0.7);
+  background: transparent;
+}
+
+.chain__link--last .chain__ring {
+  border-color: var(--blood-500);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 170, 160, 0.25),
+    0 0 18px rgba(176, 34, 43, 0.6);
+}
+
+.chain__text {
+  display: grid;
+  gap: var(--sp-1);
+  padding-block: var(--sp-3);
+}
+
+.chain__text strong {
+  color: var(--gold-300);
+  font-size: var(--fs-400);
+  line-height: 1.6;
+}
+
+.chain__text span {
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.chain__link--last .chain__text strong {
+  color: var(--blood-300);
+}
+
+/* ---------- تاريخ الشهادة ---------- */
+.martyr-date {
+  display: grid;
+  justify-items: center;
+  margin-block: var(--sp-6) var(--sp-7);
+  padding-block: var(--sp-5);
+  border-block: 1px solid rgba(142, 17, 25, 0.5);
+  text-align: center;
+}
+
+.martyr-date__day {
+  font-family: var(--font-display);
+  font-size: var(--fs-800);
+  line-height: 1.35;
+  color: var(--blood-300);
+  text-shadow: 0 0 30px rgba(176, 34, 43, 0.45);
+}
+
+.martyr-date__year {
+  color: var(--gold-300);
+  font-size: var(--fs-500);
+  font-weight: 700;
+}
+
+/* ---------- معاني الذكرى ---------- */
+.meanings {
+  display: grid;
+  margin: var(--sp-6) 0 0;
+}
+
+.meanings__item {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: var(--sp-5);
+  align-items: baseline;
+  padding-block: var(--sp-4);
+  border-block-start: 1px solid var(--ink-600);
+}
+
+.meanings__item dt {
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  line-height: 1.4;
+  color: var(--gold-500);
+}
+
+.meanings__item dd {
+  font-size: var(--fs-400);
+  line-height: 1.9;
+}
+
+@media (max-width: 63.99em) {
+  .story {
+    grid-template-columns: 1fr;
+    grid-template-areas: "text";
+  }
+  .story__media {
+    display: none;
+  }
+  .episode__figure {
+    display: block;
+    inline-size: min(100%, 26rem);
+    aspect-ratio: 4 / 5;
+    margin: 0 auto var(--sp-6);
+    -webkit-mask: var(--arch-mask) center / 100% 100% no-repeat;
+    mask: var(--arch-mask) center / 100% 100% no-repeat;
+  }
+  .episode__figure img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+  .meanings__item {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "meta": {
+    "lang": "az",
+    "dir": "ltr",
+    "name": "Azərbaycanca",
+    "short": "AZ",
+    "script": "latin-ext"
+  },
+  "common": {
+    "skip": "Məzmuna keç",
+    "brandName": "İmam Kazımın nəvələri",
+    "brandAria": "İmam Kazım Nəvələri Heyəti, ana səhifə",
+    "navAria": "Əsas naviqasiya",
+    "nav": {
+      "index": "Ana səhifə",
+      "imam": "İmam Kazım",
+      "sira": "Həyatı və şəhadəti",
+      "nasab": "Nəsəbi və ailəsi",
+      "hayaa": "Heyət"
+    },
+    "language": "Dil",
+    "menu": "Menyu",
+    "close": "Bağla",
+    "menuFoot": "İmam Kazım (ə) Nəvələri Heyəti, Müqəddəs Nəcəf",
+    "orgName": "İmam Kazım <span class='alayh'>(ə)</span> Nəvələri Heyəti",
+    "place": "Müqəddəs Nəcəf, İskan məhəlləsi",
+    "family": "Seyid Nasirin övladları",
+    "ziyaraOriginal": "السَّلامُ عَلَى المُعَذَّبِ فِي قَعْرِ السُّجُونِ، وَظُلَمِ المَطامِيرِ، ذِي السّاقِ المَرْضُوضِ بِحَلَقِ القُيُودِ",
+    "ziyara": "Zindanların dərinliyində və zirzəmilərin zülmətində əzab çəkən, ayağı qandal halqalarından əzilmiş imama salam olsun.",
+    "ziyaraCite": "İmam Musa ibn Cəfər Kazımın (ə) ziyarətnaməsindən",
+    "footerNavAria": "Saytın alt hissəsindəki keçidlər",
+    "condolence": "Allah İmam Musa ibn Cəfər Kazımın (ə) müsibətində bizim və sizin əcrinizi artırsın",
+    "copyright": "İmam Kazım (ə) Nəvələri Heyəti, 2026",
+    "nextChapter": "Növbəti bölmə"
+  },
+  "home": {
+    "docTitle": "İmam Kazım (ə) Nəvələri Heyəti | Müqəddəs Nəcəf",
+    "description": "Müqəddəs Nəcəfin İskan məhəlləsində Seyid Nasirin övladlarının rəhbərlik etdiyi İmam Kazım (ə) Nəvələri Heyəti: İmam Musa ibn Cəfər Kazımın (ə) həyatı, məzlumluğu, nəsəbi və əzadarlıq məclisləri.",
+    "heroAlt": "Qırmızı işıq süzülən barmaqlıqlı pəncərənin altında, qaranlıq kamerada diz çökmüş, əlləri bağlı məhbusun bədii təsviri; İmam Kazımın (ə) zindanını xatırladır",
+    "titleLine1": "İmam Kazım <span class='alayh hero__alayh'>(ə)</span>",
+    "titleLine2": "Nəvələri Heyəti",
+    "city": "Müqəddəs Nəcəf",
+    "quarter": "İskan məhəlləsi",
+    "family": "Seyid Nasirin övladları",
+    "foundedLabel": "Təsis ili",
+    "foundedHijri": "h.q. 1447",
+    "foundedGregorian": "2026",
+    "cue": "Davam et",
+    "prayerAria": "İmamın zindandakı duasından",
+    "prayerOriginal": "اللّهُمَّ إنّي كُنتُ أسألُكَ أن تُفَرِّغَني لِعِبادَتِك، اللّهُمَّ وقَد فَعَلت، فَلَكَ الحَمد",
+    "prayer": "İlahi, Səndən məni Sənə ibadət üçün fariğ etməyini istəyirdim. İlahi, Sən bunu etdin, həmd Sənə məxsusdur.",
+    "prayerCite": "İmam Musa ibn Cəfər Kazımın (ə) zindandakı duasından",
+    "chaptersTitle": "Bölmələr",
+    "chapters": {
+      "imam": {
+        "order": "Birinci bölmə",
+        "name": "İmam Musa ibn Cəfər Kazım <span class='alayh'>(ə)</span>",
+        "desc": "Doğumu və nəsəbi, ləqəbləri, əxlaqı, elmi və ibadəti, İslamın qorunmasındakı rolu və müsəlmanlar arasındakı mövqeyi."
+      },
+      "sira": {
+        "order": "İkinci bölmə",
+        "name": "Həyatı, məzlumluğu və şəhadəti",
+        "desc": "İmamın Abbasilər dövründə yaşadıqları, Bəsrədən Bağdada qədər zindanları və h.q. 183-cü ildə şəhadəti barədə rəvayətlər."
+      },
+      "nasab": {
+        "order": "Üçüncü bölmə",
+        "name": "İmamın ailəsi və nəsəbi",
+        "desc": "Atası İmam Sadiq (ə), anası Həmidə xanım, övladları və Əmirəl-mömininlə (ə) başlayıb nəvələrinə qədər uzanan şərəfli nəsəbi."
+      },
+      "hayaa": {
+        "order": "Dördüncü bölmə",
+        "name": "İmam Kazım <span class='alayh'>(ə)</span> Nəvələri Heyəti",
+        "desc": "Təsis səbəbi, qurucuları olan Seyid Nasirin övladları, heyətin missiyası və keçirdiyi əzadarlıq məclisləri."
+      }
+    }
+  },
+  "imam": {
+    "docTitle": "İmam Musa ibn Cəfər Kazım (ə) | İmam Kazım Nəvələri Heyəti",
+    "description": "İmam Musa ibn Cəfər Kazım (ə): doğumu və nəsəbi, ləqəbləri, əxlaqı, elmi və ibadəti, İslamın təlimlərinin qorunmasındakı rolu və müsəlmanlar arasındakı mövqeyi.",
+    "title": "İmam Musa ibn Cəfər Kazım <span class='alayh'>(əleyhissəlam)</span>",
+    "lede": "Əhli-beytin (ə) yeddinci imamı. Əbvada dünyaya gəldi və otuz beş illik imamətdən sonra Bağdadda Abbasilərin zindanında şəhid oldu; bu illər boyu uzun səcdələrin yoldaşı və Allah dərgahında Babul-həvaic idi.",
+    "vitals": {
+      "aria": "İmam haqqında qısa məlumat",
+      "birth": {
+        "label": "Doğumu",
+        "value": "7 səfər, h.q. 128",
+        "note": "Əbva, Məkkə ilə Mədinə arasında"
+      },
+      "imamate": {
+        "label": "İmaməti",
+        "value": "h.q. 148–183",
+        "note": "Otuz beş il"
+      },
+      "martyrdom": {
+        "label": "Şəhadəti",
+        "value": "25 rəcəb, h.q. 183",
+        "note": "Bağdadda, Səndi ibn Şahikin zindanında"
+      },
+      "shrine": {
+        "label": "Məqbərəsi",
+        "value": "Müqəddəs Kazimeyn",
+        "note": "Bağdad, Qüreyş qəbiristanlığı"
+      }
+    },
+    "branchesTitle": "İmamın həyatı altı bölmədə",
+    "railAria": "Səhifənin bölmələri",
+    "wilada": {
+      "title": "Doğumu və nəsəbi",
+      "body": "<p>İmam Musa ibn Cəfər (ə) məşhur rəvayətə görə hicri-qəməri 128-ci il səfər ayının 7-də Məkkə ilə Mədinə arasındakı <strong>Əbva</strong> adlı məntəqədə dünyaya gəlmişdir. Atası İmam Sadiq (ə) o zaman həcdən qayıdırdı və onun doğumunu sevinclə qarşıladı.</p><p>Atası Əhli-beytin altıncı imamı İmam Cəfər ibn Məhəmməd Sadiq (ə), anası isə Həmidə Müsəffa xanımdır. İmam Sadiq (ə) onun haqqında demişdir: «Həmidə hər cür çirkabdan təmizlənmişdir, qızıl külçə kimi».</p>",
+      "lineage": "Musa ibn Cəfər ibn Məhəmməd ibn Əli ibn Hüseyn ibn Əli ibn Əbu Talib <span>(əleyhimussəlam)</span>",
+      "kunya": "Künyəsi Əbül-Həsən və Əbu İbrahimdir."
+    },
+    "alqab": {
+      "title": "Ləqəbləri",
+      "intro": "Hər ləqəbinin onun bir xüsusiyyətinə şahidlik edən öz hekayəsi var:",
+      "kadhim": {
+        "name": "Kazım",
+        "why": "Çünki qəzəbini boğar, pisliyə yaxşılıqla cavab verərdi; bu ləqəb adından da məşhur oldu."
+      },
+      "salih": {
+        "name": "Əbdi-saleh",
+        "why": "Çox ibadət etdiyi və uzun səcdələri üçün ravilərin onu tanıdığı ləqəb."
+      },
+      "hawaij": {
+        "name": "Babul-həvaic",
+        "why": "Çünki insanlar onu Uca Allah dərgahında vəsilə edəndə hacətlərinin rəva olduğunu gördülər."
+      },
+      "sabir": {
+        "name": "Sabir və Əmin",
+        "why": "Bəlaya və zindana səbri, babası Allahın Rəsulunun (s) dininə əmanətdarlığı üçün."
+      }
+    },
+    "akhlaq": {
+      "title": "Əxlaqı",
+      "body": "<p>Əziyyətə yaxşılıqla cavab verərdi. Rəvayət olunur ki, Mədinə əhlindən bir kişi ona əziyyət verir və Əmirəl-mömininə (ə) pis sözlər deyirdi. Səhabələrindən bəziləri onu cəzalandırmaq istədilər, lakin İmam onlara mane oldu. Sonra özü o kişinin tarlasına getdi, ona xoş rəftar etdi və pul bağışladı. Kişinin halı dəyişdi və belə deməyə başladı: «Allah Öz risalətini harada qərar verəcəyini daha yaxşı bilir».</p><p>Gecələr Mədinənin yoxsullarına baş çəkər, onlara dinar kisələri aparardı, onlar isə bu yardımın haradan gəldiyini bilməzdilər; nəhayət, «Musanın kisələri» xalq arasında məsəl oldu.</p>"
+    },
+    "ilm": {
+      "title": "Elmi və ibadəti",
+      "sujud": "Səcdələri o qədər uzun idi ki, onu «uzun səcdənin yoldaşı» adlandırdılar. Səcdədəki dualarından biri:",
+      "dua": "«Bəndənin günahı böyükdür, qoy Səndən olan bağışlanma da gözəl olsun»",
+      "prison": "Zindana salınanda dedi: «İlahi, Səndən məni Sənə ibadət üçün fariğ etməyini istəyirdim. İlahi, Sən bunu etdin, həmd Sənə məxsusdur» və kamerasını mehraba çevirdi.",
+      "knowledge": "O, öz dövrünün elm mərcəyi idi; səhabələri və atasının səhabələri ondan çoxlu hədis və fiqh rəvayət etmişlər. Ondan nəql olunanların ən dəyərlilərindən biri Hişam ibn Həkəmə ağıl və hikmət haqqında etdiyi vəsiyyətdir."
+    },
+    "hifz": {
+      "title": "İslamın təlimlərinin qorunmasındakı rolu",
+      "rail": "İslamın qorunması",
+      "context": "Atasının şəhadətindən sonra, h.q. 148-ci ildə Abbasi xəlifəsi Mənsurun dövründə imamət məqamına çatdı, ondan sonra Mehdi, Hadi və Harun ər-Rəşidin dövrlərini yaşadı; hakimiyyət isə Əhli-beyti (ə) və onların ardıcıllarını izləyir və onlara təzyiq göstərirdi.",
+      "deed1": "Atası İmam Sadiqin (ə) məktəbini qorudu, fiqhi, hədisi və əqidəni səhabələrinə ötürdü.",
+      "deed2": "Müxtəlif diyarlarda insanları imamları ilə bağlayan və cavablarını onlara çatdıran vəkillər şəbəkəsi qurdu.",
+      "deed3": "Zalıma qanunilik verməkdən imtina etdi; səhabələrinə zalımlara meyl etməməyi öyrətmək üçün dəvələrini, hətta həcc yolu üçün olsa belə, Haruna kirayə verdiyinə görə Səfvan Cəmmalı danladı."
+    },
+    "makana": {
+      "title": "Müsəlmanlar arasında mövqeyi",
+      "body": "Müsəlmanlar onun elmi, ibadəti və səxavəti barədə həmfikirdirlər. Bağdadın Kazimeyn məntəqəsində, nəvəsi İmam Məhəmməd Cavadın (ə) yanında yerləşən məqbərəsi dünyanın hər yerindən gələn zəvvarların ziyarətgahıdır; hər il şəhadətinin ildönümündə milyonlarla insan ora piyada gedir.",
+      "quote": "«Məni nə vaxt bir iş narahat etdisə və Musa ibn Cəfərin qəbrinə gedib onu vəsilə etdimsə, Allah istədiyimi mənə asanlaşdırdı»",
+      "quoteSource": "Öz dövrünün hənbəli şeyxi Əbu Əli Xəllal; Xətib Bağdadi «Bağdad tarixi» əsərində nəql edib"
+    },
+    "next": "İkinci bölmə: həyatı, məzlumluğu və şəhadəti"
+  },
+  "sira": {
+    "docTitle": "İmamın həyatı, məzlumluğu və şəhadəti | İmam Kazım Nəvələri Heyəti",
+    "description": "İmam Musa Kazımın (ə) yaşadığı şərait, Bəsrədən Bağdada qədər zindanları, h.q. 183-cü ildə şəhadəti barədə rəvayətlər və onun xatirəsində səbr və mətanətin mənası.",
+    "title": "Həyatı, məzlumluğu və şəhadəti",
+    "lede": "Otuz beş illik imamət; son illəri qandallar və zirzəmilər arasında keçdi, lakin zindan onu yalnız Rəbbinə daha da yaxınlaşdırdı.",
+    "circumstances": {
+      "caption": "Qandalda mətanət",
+      "alt": "Zəncirlənmiş, şəhadət barmağını göyə qaldırmış, üzünü nur bürümüş İmamın (ə) bədii təsviri",
+      "title": "İmamın yaşadığı dövr",
+      "body": "<p>İmam Musa Kazım (ə) atası İmam Sadiqin (ə) şəhadətindən sonra, h.q. 148-ci ildə, Abbasi dövlətinin zülmünün zirvədə olduğu bir vaxtda imamət məqamına çatdı. Mənsur İmam Sadiqin canişin təyin edəcəyi şəxsi öldürməyi qərara almışdı; buna görə İmam (ə) oğlunu ölümdən qorumaq üçün beş nəfəri vəsi təyin etdi və onların birincisi Mənsurun özü idi.</p><p>Sonra onu Bağdada apartdırıb sonra azad edən Mehdinin, ondan sonra Hadinin dövrünü yaşadı və nəhayət Harun ər-Rəşid hakimiyyətə gəldi. Əhli-beytə (ə) və ardıcıllarına qarşı təqiblər şiddətləndi; İmam səhabələrinin təqib olunub zindana salındığını görür, özü isə səbirlə babasının dinini qoruyur və şiələrini səbrə çağırırdı.</p>"
+    },
+    "prison": {
+      "caption": "Zirzəmidə dua",
+      "alt": "Zirzəminin zülmətində, biləklərində zəncir, əllərini duaya qaldırmış diz çökmüş məhbusun bədii təsviri",
+      "title": "Zindan: Mədinədən Bağdada",
+      "intro": "H.q. 179-cu ildə Harun İmamın həbs olunmasını əmr etdi. Onu babası Allahın Rəsulunun (s) qəbri yanında namaz qılarkən tutdular və hər halqası əvvəlkindən daha ağır olan uzun zindan yolu başladı:",
+      "medina": {
+        "place": "Mədinə, h.q. 179",
+        "note": "Babasının (s) məscidində həbs olunaraq zəncirlə aparıldı."
+      },
+      "basra": {
+        "place": "Bəsrə: İsa ibn Cəfərin zindanı",
+        "note": "Təxminən bir il; nəhayət İsa İmamın ibadətindən təsirlənərək Haruna məktub yazdı və onu ondan təhvil almasını istədi."
+      },
+      "rabi": {
+        "place": "Bağdad: Fəzl ibn Rəbinin zindanı",
+        "note": "Xilafətin paytaxtına aparıldı və həbsi uzun sürdü."
+      },
+      "yahya": {
+        "place": "Bağdad: Fəzl ibn Yəhyanın zindanı",
+        "note": "Zindanda İmama yüngüllük etdi və buna görə cəzalandırıldı."
+      },
+      "sindi": {
+        "place": "Bağdad: Səndi ibn Şahikin zindanı",
+        "note": "Zindanların ən ağırı və ən amansızı; şəhadət burada baş verdi."
+      },
+      "outro": "Zirzəmilərin zülmətində İmam nə şikayət etdi, nə də güzəştə getdi; gecə-gündüz səcdədə idi, hətta zindanbanları onun ibadətindən təngə gəldilər. O belə dedi: «İlahi, Səndən məni Sənə ibadət üçün fariğ etməyini istəyirdim. İlahi, Sən bunu etdin, həmd Sənə məxsusdur»."
+    },
+    "martyrdom": {
+      "caption": "Yaşıl əmmamə",
+      "alt": "Daş üzərində qana bulaşmış yaşıl əmmamə; İmamın (ə) şəhadətinin rəmzi",
+      "title": "Şəhadəti barədə rəvayətlər",
+      "day": "25 rəcəb",
+      "year": "h.q. 183",
+      "body": "<p>Səndi ibn Şahikin zindanında Harunun əmri ilə ona zəhər verildi və məşhur rəvayətə görə h.q. 183-cü il rəcəb ayının 25-də, əlli beş yaşında şəhid oldu.</p><p>Səndi hakimiyyəti ittihamdan uzaq tutmaq üçün Bağdadın nüfuzlu şəxslərindən bir dəstəni İmamın yanına gətirdi ki, ona heç bir zərər yetişmədiyinə şahidlik etsinlər; lakin İmam (ə) onlara zəhərləndiyini xəbər verdi.</p><p>Sonra onun pak cənazəsini Bağdad körpüsünün üstünə qoydular və onu təhqir etmək məqsədi ilə car çəkdilər. Nəhayət Süleyman ibn Əbu Cəfər çıxıb cənazəni götürdü və kəfənlədi; xalq onu Qüreyş qəbiristanlığına qədər müşayiət etdi. Bu gün onun məqbərəsi orada, Müqəddəs Kazimeyndədir.</p>"
+    },
+    "meaning": {
+      "caption": "Səbr və mətanət",
+      "title": "Bu ildönümünün mənası",
+      "intro": "Zindan İmamı sındırmadı, əksinə, onun cövhərini üzə çıxardı: şikayətsiz səbr, qandalın kəsə bilmədiyi səcdə və haqq yolunda heç bir sövdələşməyə getməyən mətanət. Buna görə də onun şəhadət günü əhdin təzələndiyi gün oldu.",
+      "patience": {
+        "name": "Səbr",
+        "text": "Divarlar nə qədər daralsa da, qəlbin Allahın qəzasına razı qalması."
+      },
+      "steadfastness": {
+        "name": "Mətanət",
+        "text": "Bütün ömür bahasına olsa belə, zalıma qanunilik verilməməsi."
+      },
+      "loyalty": {
+        "name": "Vəfa",
+        "text": "Xatirənin hər il dirçəldilməsi: zəvvarlar Kazimeynə piyada gedir, evlərdə və heyətlərdə məclislər qurulur."
+      }
+    },
+    "next": "Üçüncü bölmə: İmamın ailəsi və nəsəbi"
+  },
+  "nasab": {
+    "docTitle": "İmamın ailəsi və nəsəbi | İmam Kazım Nəvələri Heyəti",
+    "description": "İmam Kazımın (ə) atası İmam Cəfər Sadiq, anası Həmidə xanım, övladları və ailəsi, eləcə də İmam Hüseynə və İmam Əliyə (ə) qovuşan, Seyid Nasirin övladlarına qədər uzanan şərəfli nəsəbi.",
+    "title": "İmamın ailəsi və nəsəbi",
+    "lede": "Halqaları qırılmayan bir nəsəb: Əmirəl-mömininindən (ə) İmam Kazıma (ə), ondan da bu gün onun adını daşıyan nəvələrinə qədər.",
+    "parents": {
+      "title": "Valideynləri",
+      "father": {
+        "role": "Atası",
+        "name": "İmam Cəfər ibn Məhəmməd Sadiq <span class='alayh'>(ə)</span>",
+        "text": "Əhli-beytin (ə) altıncı imamı və öz dövrünün ən böyük elm məktəbinin banisi; minlərlə ravi və alim ondan dərs almış, cəfəri məzhəbi onun adını daşıyır. İmam Kazım (ə) elmi və iməməti ondan almışdır."
+      },
+      "mother": {
+        "role": "Anası",
+        "name": "Həmidə Müsəffa xanım",
+        "text": "Elmi, təqvası və iffəti ilə tanınırdı; İmam Sadiq (ə) onu tərifləyirdi. Onun haqqında dediklərindən:",
+        "quote": "«Həmidə hər cür çirkabdan təmizlənmişdir, qızıl külçə kimi»"
+      }
+    },
+    "lineage": {
+      "title": "Şərəfli nəsəb",
+      "intro": "Haşimi, ələvi, hüseyni; onun nəslindən musəvi seyidlər gəlir, Seyid Nasirin övladları da onlardandır.",
+      "legendImams": "Əhli-beyt imamları (ə)",
+      "legendSayyids": "İmam Kazımın (ə) nəslindən olan seyidlər"
+    },
+    "tree": {
+      "ali": {
+        "name": "İmam Əli ibn Əbu Talib (ə)",
+        "role": "Əmirəl-möminin"
+      },
+      "husayn": {
+        "name": "İmam Hüseyn ibn Əli (ə)",
+        "role": "Seyyidüş-şühəda"
+      },
+      "sajjad": {
+        "name": "İmam Əli ibn Hüseyn (ə)",
+        "role": "Zeynül-abidin Səccad"
+      },
+      "baqir": {
+        "name": "İmam Məhəmməd ibn Əli (ə)",
+        "role": "Baqir"
+      },
+      "sadiq": {
+        "name": "İmam Cəfər ibn Məhəmməd (ə)",
+        "role": "Sadiq"
+      },
+      "kadhim": {
+        "name": "İmam Musa ibn Cəfər Kazım <span class='alayh'>(ə)</span>",
+        "role": "Babul-həvaic"
+      },
+      "abid": {
+        "name": "Seyid Məhəmməd Abid",
+        "role": "İmam Kazımın (ə) oğlu"
+      },
+      "mujab": {
+        "name": "Seyid İbrahim Mücab",
+        "role": "Kərbəlada, İmam Hüseynin (ə) hərəmində dəfn olunub"
+      },
+      "gap": "Möhtərəm əcdad silsiləsi",
+      "nasir": {
+        "name": "Seyid Nasir"
+      },
+      "sons": {
+        "name": "Seyid Nasirin övladları",
+        "role": "İmam Kazım (ə) Nəvələri Heyəti, Müqəddəs Nəcəf"
+      }
+    },
+    "mujab": {
+      "title": "Seyid İbrahim Mücab",
+      "body": "<p>O, İmam Musa Kazımın (ə) oğlu Məhəmməd Abidin oğlu İbrahimdir. Deyilənə görə, İmam Hüseynin (ə) hərəminin yaxınlığında məskunlaşan ilk ələvi o olmuşdur; bu gün qəbri Müqəddəs Kərbəlada, Hüseyni hərəmin eyvanındadır.</p><p>Ona «Mücab», yəni «cavab alan» deyildi, çünki babası Hüseynin (ə) qəbri önündə dayanıb «Sənə salam olsun, ey ata» dedi və qəbirdən cavab eşidildi: «Sənə də salam olsun, ey oğlum».</p><p>Onun nəslindən musəvi seyidlər bütün İraqa yayıldı; bu heyəti quran Seyid Nasirin övladları da onlardandır.</p>"
+    },
+    "children": {
+      "title": "Övladları və ailəsi",
+      "intro": "Şeyx Müfid qeyd edir ki, İmam Kazımın (ə) otuz yeddi övladı, oğul və qızları olmuşdur; onların nəsli bir çox diyara yayılmışdır. Ən məşhurlarından:",
+      "rida": {
+        "name": "İmam Əli ibn Musa Rza <span class='alayh'>(ə)</span>",
+        "text": "Əhli-beytin (ə) səkkizinci imamı; məqbərəsi Məşhəddədir."
+      },
+      "masuma": {
+        "name": "Həzrət Fatimeyi-Məsumə <span class='alayh'>(s.ə)</span>",
+        "text": "Əhli-beytin kərimə qızı; məqbərəsi Qumdadır."
+      },
+      "ahmad": {
+        "name": "Seyid Əhməd ibn Musa",
+        "text": "Şahçıraq kimi tanınır; məqbərəsi Şirazdadır."
+      },
+      "muhammad": {
+        "name": "Seyid Məhəmməd ibn Musa Abid",
+        "text": "Çox namaz qılıb ibadət etdiyi üçün «Abid» adlandırılıb; məqbərəsi Şirazdadır, Seyid Nasirin övladları da onun nəslindəndir."
+      }
+    },
+    "next": "Dördüncü bölmə: İmam Kazım (ə) Nəvələri Heyəti"
+  },
+  "hayaa": {
+    "docTitle": "İmam Kazım (ə) Nəvələri Heyəti | Müqəddəs Nəcəf, İskan məhəlləsi",
+    "description": "İmam Kazım (ə) Nəvələri Heyəti: təsis səbəbi, fəaliyyətinin başlanğıcı, qurucuları olan Seyid Nasirin övladları, heyətin missiyası və keçirdiyi əzadarlıq məclisləri.",
+    "title": "İmam Kazım <span class='alayh'>(ə)</span> Nəvələri Heyəti",
+    "lede": "Müqəddəs Nəcəfin İskan məhəlləsində Seyid Nasirin övladlarının rəhbərlik etdiyi hüseyni heyət.",
+    "who": {
+      "title": "Biz kimik",
+      "statement": "Biz haşimi, ələvi, hüseyni və musəvi seyidlərik. Nəsəbimiz İmam Musa ibn Cəfər Kazımın (ə) oğlu Seyid Məhəmməd Abidin oğlu Seyid İbrahim Mücaba çatır; biz onun nəvələriyik və heyətin adı da buradan gəlir.",
+      "link": "Tam şəcərə"
+    },
+    "founding": {
+      "title": "Təsis səbəbi",
+      "p1": "Bu heyət boşluqdan yaranmayıb. Bu gün keçirdiyimiz məclis qədim bir məclisdir; atalarımız və babalarımız onu çoxdan yaşadıblar. İldən-ilə, imkanları daxilində və yorulmaq bilməyən qəlblərlə orada Əhli-beytin (ə) müsibətinə yas çırağını yandırıblar.",
+      "p2": "Biz belə tərbiyə olunmuşuq: Hüseynə və onun ailəsinə (ə) yas tutmaq heç vaxt pozulmayan bir əhddir; seyidlik isə sadalanan bir nəsəb deyil, yaşanan bir əxlaqdır.",
+      "virtue1": "Əliaçıqlıq",
+      "virtue2": "Qəzəbi boğmaq",
+      "virtue3": "Sileyi-rəhim",
+      "virtue4": "Əziyyətə səbr",
+      "p3": "Bunlar Məhəmməd (s) ailəsindən olan əcdadlarımızın sifətləridir; onların başında qəzəbini boğduğu üçün «Kazım» adlandırılan babamız İmam Musa ibn Cəfər (ə) dayanır.",
+      "p4": "Bu məclis atalarımızdan sonra yaşadığı kimi bizdən sonra da yaşasın deyə, Seyid Nasirin övladları bu irsi babalarının adını daşıyan bir heyət şəklində təşkil etmək üçün bir araya gəldilər."
+    },
+    "launch": {
+      "title": "Məclisdən heyətə",
+      "past": {
+        "tag": "Dünən",
+        "when": "Ata-babalarımızın dövründən",
+        "what": "Seyidlərin evlərində keçirilən və nəsildən-nəslə ötürülən qədim əzadarlıq məclisi.",
+        "alt": "Ataların dövründən seyidlərin köhnə fotosu: böyük yemək qazanının ətrafında bir yerdə oturublar"
+      },
+      "now": {
+        "tag": "Bu gün",
+        "when": "h.q. 1447, 2026",
+        "what": "İmam Kazım (ə) Nəvələri Heyəti Müqəddəs Nəcəfin İskan məhəlləsində fəaliyyətə başlayır.",
+        "alt": "Seyid Nasirin övladları olan seyidlər bu gün öz övladları ilə məclisdə"
+      }
+    },
+    "founders": {
+      "label": "Qurucular",
+      "name": "Seyid Nasirin övladları",
+      "text": "Seyid Nasirin oğulları və nəvələri olan musəvi seyidlər; atalarının məclisini davam etdirərək babaları İmam Kazıma (ə) və Əhli-beytə (ə) xidmət məqsədi ilə bu heyəti onun üzərində qurdular."
+    },
+    "mission": {
+      "title": "Missiyamız",
+      "statement": "İmam Kazımın (ə) səsini içimizdə yaşatmaq: zülm qarşısında səbr, qandalın kəsə bilmədiyi səcdə və gecə adsız gələn səxavət. Əhli-beytə (ə) vəfa olaraq əzadarlıq məclisləri keçiririk, övladlarımızı da bizim tərbiyə olunduğumuz kimi orada tərbiyə edir, qapılarımızı hər bir aşiqə, xadimə və zəvvara açırıq.",
+      "revival": {
+        "name": "Dirçəliş",
+        "text": "Əzadarlıq məclislərini öz vaxtında keçirmək və Əhli-beytin (ə) xatirəsini evlərdə və qəlblərdə yaşatmaq."
+      },
+      "loyalty": {
+        "name": "Vəfa",
+        "text": "Ata-babaların irsini qorumaq və məclisi bizə çatdığı kimi övladlara ötürmək."
+      },
+      "service": {
+        "name": "Xidmət",
+        "text": "Əzadarları qarşılamaq və onlara xidmət etmək, səxavətdə və qəzəbi boğmaqda Əhli-beytin (ə) yolu ilə getmək."
+      }
+    },
+    "majalis": {
+      "title": "Məclislərimiz",
+      "intro": "Heyətin hər il qeyd etdiyi əzadarlıq günləri:",
+      "kadhim": {
+        "day": "25",
+        "month": "rəcəb",
+        "title": "İmam Musa Kazımın (ə) şəhadətinin ildönümü",
+        "text": "İmamın Bağdad zindanlarındakı müsibətini, şəhadətə qədər səbrini və mətanətini xatırladan əzadarlıq məclisi."
+      },
+      "ashura": {
+        "day": "1–10",
+        "month": "məhərrəm",
+        "title": "Müqəddəs Məhərrəm ayının ilk on günü",
+        "text": "Aşuranın on gecəsinin onuncu gecəyə qədər mərsiyə və hüseyni əzadarlıq məclisləri ilə dirçəldilməsi."
+      },
+      "night": {
+        "day": "Bir gecə",
+        "month": "məhərrəmdə",
+        "title": "Müqəddəs Məhərrəm gecələrindən birində əzadarlıq məclisi",
+        "text": "Heyətin yas ayının gecələrindən birində Seyyidüş-şühədaya (ə) vəfa olaraq keçirdiyi illik məclis."
+      }
+    }
+  }
+}

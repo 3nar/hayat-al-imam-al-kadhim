@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="{{v:lang}}" dir="{{v:dir}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{t:hayaa.docTitle}}</title>
+    <meta name="description" content="{{t:hayaa.description}}" />
+    <!--include:head-->
+  </head>
+  <body class="page-hayaa">
+    <!--include:header-->
+
+    <main id="main">
+      <canvas class="top-curtain" aria-hidden="true" data-top-curtain></canvas>
+      <header class="page-head container">
+        <span class="page-head__kicker">{{t:home.chapters.hayaa.order}}</span>
+        <h1 class="page-head__title">{{t:hayaa.title}}</h1>
+        <p class="page-head__lede">{{t:hayaa.lede}}</p>
+        <div class="divider" aria-hidden="true"><svg><use href="#i-star" /></svg></div>
+      </header>
+
+      <section class="who container container--narrow" aria-labelledby="who-title">
+        <h2 class="visually-hidden" id="who-title">{{t:hayaa.who.title}}</h2>
+        <p class="who__statement" data-reveal>{{t:hayaa.who.statement}}</p>
+        <a class="who__link" href="./nasab.html" data-reveal>{{t:hayaa.who.link}}</a>
+      </section>
+
+      <section class="founding container" aria-labelledby="founding-title">
+        <div class="founding__grid">
+          <h2 class="founding__title" id="founding-title" data-reveal>{{t:hayaa.founding.title}}</h2>
+          <div class="founding__text prose" data-reveal>
+            <p>{{t:hayaa.founding.p1}}</p>
+            <p>{{t:hayaa.founding.p2}}</p>
+            <ul class="virtues" role="list">
+              <li>{{t:hayaa.founding.virtue1}}</li>
+              <li>{{t:hayaa.founding.virtue2}}</li>
+              <li>{{t:hayaa.founding.virtue3}}</li>
+              <li>{{t:hayaa.founding.virtue4}}</li>
+            </ul>
+            <p>{{t:hayaa.founding.p3}}</p>
+            <p>{{t:hayaa.founding.p4}}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="launch container" aria-labelledby="launch-title">
+        <h2 class="section-title" id="launch-title" data-reveal>{{t:hayaa.launch.title}}</h2>
+        <ol class="launch__line" role="list" data-launch>
+          <li class="launch__step">
+            <span class="launch__mark" aria-hidden="true"></span>
+            <figure class="launch__photo">
+              <img src="{{v:root}}img/majlis-then-720.webp" srcset="{{v:root}}img/majlis-then-720.webp 720w, {{v:root}}img/majlis-then-1280.webp 1280w" sizes="(min-width: 48em) 34rem, 92vw" width="1280" height="720" loading="lazy" alt="{{t:hayaa.launch.past.alt}}" />
+              <figcaption class="launch__tag">{{t:hayaa.launch.past.tag}}</figcaption>
+            </figure>
+            <span class="launch__when">{{t:hayaa.launch.past.when}}</span>
+            <span class="launch__what">{{t:hayaa.launch.past.what}}</span>
+          </li>
+          <li class="launch__step launch__step--now">
+            <span class="launch__mark" aria-hidden="true"></span>
+            <figure class="launch__photo">
+              <img src="{{v:root}}img/majlis-now-720.webp" srcset="{{v:root}}img/majlis-now-720.webp 720w, {{v:root}}img/majlis-now-1280.webp 1280w" sizes="(min-width: 48em) 34rem, 92vw" width="1280" height="720" loading="lazy" alt="{{t:hayaa.launch.now.alt}}" />
+              <figcaption class="launch__tag">{{t:hayaa.launch.now.tag}}</figcaption>
+            </figure>
+            <span class="launch__when">{{t:hayaa.launch.now.when}}</span>
+            <span class="launch__what">{{t:hayaa.launch.now.what}}</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="founders container container--narrow" aria-labelledby="founders-title">
+        <div class="founders__card frame frame--green" data-reveal>
+          <span class="founders__label" id="founders-title">{{t:hayaa.founders.label}}</span>
+          <p class="founders__name">{{t:hayaa.founders.name}}</p>
+          <p class="founders__text">{{t:hayaa.founders.text}}</p>
+        </div>
+      </section>
+
+      <section class="mission container" aria-labelledby="mission-title">
+        <h2 class="section-title" id="mission-title" data-reveal>{{t:hayaa.mission.title}}</h2>
+        <p class="mission__statement" data-reveal>{{t:hayaa.mission.statement}}</p>
+        <ul class="pillars" role="list">
+          <li class="pillar" data-reveal>
+            <svg class="pillar__star" aria-hidden="true"><use href="#i-star" /></svg>
+            <h3>{{t:hayaa.mission.revival.name}}</h3>
+            <p>{{t:hayaa.mission.revival.text}}</p>
+          </li>
+          <li class="pillar" data-reveal>
+            <svg class="pillar__star" aria-hidden="true"><use href="#i-star" /></svg>
+            <h3>{{t:hayaa.mission.loyalty.name}}</h3>
+            <p>{{t:hayaa.mission.loyalty.text}}</p>
+          </li>
+          <li class="pillar" data-reveal>
+            <svg class="pillar__star" aria-hidden="true"><use href="#i-star" /></svg>
+            <h3>{{t:hayaa.mission.service.name}}</h3>
+            <p>{{t:hayaa.mission.service.text}}</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="majalis container" aria-labelledby="majalis-title">
+        <h2 class="section-title" id="majalis-title" data-reveal>{{t:hayaa.majalis.title}}</h2>
+        <p class="majalis__intro" data-reveal>{{t:hayaa.majalis.intro}}</p>
+        <ol class="majalis__list" role="list">
+          <li class="majlis" data-reveal>
+            <p class="majlis__date"><span>{{t:hayaa.majalis.kadhim.day}}</span> {{t:hayaa.majalis.kadhim.month}}</p>
+            <div class="majlis__body">
+              <h3>{{t:hayaa.majalis.kadhim.title}}</h3>
+              <p>{{t:hayaa.majalis.kadhim.text}}</p>
+            </div>
+          </li>
+          <li class="majlis" data-reveal>
+            <p class="majlis__date"><span>{{t:hayaa.majalis.ashura.day}}</span> {{t:hayaa.majalis.ashura.month}}</p>
+            <div class="majlis__body">
+              <h3>{{t:hayaa.majalis.ashura.title}}</h3>
+              <p>{{t:hayaa.majalis.ashura.text}}</p>
+            </div>
+          </li>
+          <li class="majlis" data-reveal>
+            <p class="majlis__date"><span>{{t:hayaa.majalis.night.day}}</span> {{t:hayaa.majalis.night.month}}</p>
+            <div class="majlis__body">
+              <h3>{{t:hayaa.majalis.night.title}}</h3>
+              <p>{{t:hayaa.majalis.night.text}}</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <!--include:footer-->
+    <script type="module" src="{{v:root}}scripts/pages/hayaa.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="{{v:lang}}" dir="{{v:dir}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{t:home.docTitle}}</title>
+    <meta name="description" content="{{t:home.description}}" />
+    <link rel="preload" as="image" href="{{v:root}}img/cell-wide-1600.webp" imagesrcset="{{v:root}}img/cell-wide-960.webp 960w, {{v:root}}img/cell-wide-1600.webp 1600w" imagesizes="100vw" media="(min-width: 48em)" />
+    <link rel="preload" as="image" href="{{v:root}}img/cell-tall-720.webp" imagesrcset="{{v:root}}img/cell-tall-720.webp 720w, {{v:root}}img/cell-tall-1083.webp 1083w" imagesizes="100vw" media="(max-width: 47.99em)" />
+    <!--include:head-->
+  </head>
+  <body class="page-home">
+    <!--include:header-->
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <picture class="hero__photo" data-hero-photo>
+          <source media="(max-width: 47.99em)" srcset="{{v:root}}img/cell-tall-720.webp 720w, {{v:root}}img/cell-tall-1083.webp 1083w" sizes="100vw" width="1083" height="1452" />
+          <img
+            src="{{v:root}}img/cell-wide-1600.webp"
+            srcset="{{v:root}}img/cell-wide-960.webp 960w, {{v:root}}img/cell-wide-1600.webp 1600w"
+            sizes="100vw"
+            width="1600"
+            height="900"
+            fetchpriority="high"
+            alt="{{t:home.heroAlt}}"
+          />
+        </picture>
+        <div class="hero__veil" aria-hidden="true"></div>
+        <canvas class="hero__gl" aria-hidden="true" data-hero-canvas></canvas>
+
+        <div class="hero__content container">
+          <div class="hero__text">
+            <h1 class="hero__title" id="hero-title" data-hero-title>
+              <span class="hero__title-line">{{t:home.titleLine1}}</span>
+              <span class="hero__title-line">{{t:home.titleLine2}}</span>
+            </h1>
+            <span class="hero__rule" aria-hidden="true" data-hero-line><svg><use href="#i-star" /></svg></span>
+            <p class="hero__city" data-hero-line>{{t:home.city}}</p>
+            <p class="hero__quarter" data-hero-line>{{t:home.quarter}}</p>
+            <p class="hero__family" data-hero-line>{{t:home.family}}</p>
+            <p class="hero__founded" data-hero-line>
+              <span class="hero__founded-label">{{t:home.foundedLabel}}</span>
+              <span class="hero__dates">
+                <span>{{t:home.foundedHijri}}</span>
+                <span class="hero__sep" aria-hidden="true">۞</span>
+                <span>{{t:home.foundedGregorian}}</span>
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <a class="hero__cue" href="#prayer" data-hero-line>
+          <span class="hero__cue-line" aria-hidden="true"></span>
+          {{t:home.cue}}
+        </a>
+      </section>
+
+      <section class="interlude" id="prayer" aria-label="{{t:home.prayerAria}}">
+        <div class="container container--narrow">
+          <figure class="interlude__figure" data-reveal>
+            <svg class="interlude__star" aria-hidden="true"><use href="#i-star" /></svg>
+            <blockquote class="interlude__text">
+              <p class="original" lang="ar" dir="rtl">{{t:home.prayerOriginal}}</p>
+              <p>{{t:home.prayer}}</p>
+            </blockquote>
+            <figcaption class="interlude__cite">{{t:home.prayerCite}}</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="chapters" aria-labelledby="chapters-title">
+        <div class="container">
+          <h2 class="chapters__title" id="chapters-title" data-reveal>{{t:home.chaptersTitle}}</h2>
+          <ol class="chapters__list" role="list">
+            <li data-reveal>
+              <a class="chapter" href="./imam.html">
+                <span class="chapter__order">{{t:home.chapters.imam.order}}</span>
+                <span class="chapter__name">{{t:home.chapters.imam.name}}</span>
+                <span class="chapter__desc">{{t:home.chapters.imam.desc}}</span>
+                <svg class="chapter__star" aria-hidden="true"><use href="#i-star" /></svg>
+              </a>
+            </li>
+            <li data-reveal>
+              <a class="chapter" href="./sira.html">
+                <span class="chapter__order">{{t:home.chapters.sira.order}}</span>
+                <span class="chapter__name">{{t:home.chapters.sira.name}}</span>
+                <span class="chapter__desc">{{t:home.chapters.sira.desc}}</span>
+                <svg class="chapter__star" aria-hidden="true"><use href="#i-star" /></svg>
+              </a>
+            </li>
+            <li data-reveal>
+              <a class="chapter" href="./nasab.html">
+                <span class="chapter__order">{{t:home.chapters.nasab.order}}</span>
+                <span class="chapter__name">{{t:home.chapters.nasab.name}}</span>
+                <span class="chapter__desc">{{t:home.chapters.nasab.desc}}</span>
+                <svg class="chapter__star" aria-hidden="true"><use href="#i-star" /></svg>
+              </a>
+            </li>
+            <li data-reveal>
+              <a class="chapter" href="./hayaa.html">
+                <span class="chapter__order">{{t:home.chapters.hayaa.order}}</span>
+                <span class="chapter__name">{{t:home.chapters.hayaa.name}}</span>
+                <span class="chapter__desc">{{t:home.chapters.hayaa.desc}}</span>
+                <svg class="chapter__star" aria-hidden="true"><use href="#i-star" /></svg>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <!--include:footer-->
+    <script type="module" src="{{v:root}}scripts/pages/home.js"></script>
+  </body>
+</html>

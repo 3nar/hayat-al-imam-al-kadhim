@@ -1,0 +1,410 @@
+/* ==========================================================================
+   الصفحة الرئيسية
+   ========================================================================== */
+
+.page-home .site-footer {
+  margin-block-start: var(--sp-9);
+}
+
+.hero {
+  position: relative;
+  min-block-size: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--ink-950);
+}
+
+.hero__photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  will-change: transform, opacity;
+}
+
+.js .hero__photo {
+  opacity: 0;
+}
+
+.hero__photo img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: 72% 50%;
+}
+
+.hero__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(4, 2, 3, 0.75) 0%, transparent 22%),
+    var(--grad-veil-bottom),
+    var(--grad-veil-start);
+  pointer-events: none;
+}
+
+.hero__gl {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  inline-size: 100%;
+  block-size: 100%;
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  align-items: center;
+  min-block-size: 100svh;
+  padding-block: calc(var(--header-h) + var(--sp-6)) calc(var(--sp-9) + var(--sp-2));
+}
+
+.hero__text {
+  inline-size: min(100%, 46rem);
+  /* الكتلة في الجانب الأيسر دائمًا، بعيدًا عن الشخص في الصورة، أيًّا كان اتجاه اللغة */
+  margin-left: clamp(0rem, 4vw, 4rem);
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero__title {
+  --ink: 0%;
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  font-weight: 700;
+  line-height: var(--lh-display);
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 6px 22px rgba(0, 0, 0, 0.85));
+  padding-block: 0.08em 0.18em;
+  /* يُكتب الاسم من اليمين إلى اليسار كما يُخطّ بالقلم */
+  -webkit-mask-image: linear-gradient(to left, #000 calc(110% - var(--ink) * 1.2 - 12%), transparent calc(110% - var(--ink) * 1.2));
+  mask-image: linear-gradient(to left, #000 calc(110% - var(--ink) * 1.2 - 12%), transparent calc(110% - var(--ink) * 1.2));
+}
+
+.js .hero__title {
+  --ink: 100%;
+}
+
+.hero__title-line {
+  display: block;
+}
+
+.hero__alayh {
+  font-size: 0.32em;
+  vertical-align: 0.9em;
+  margin-inline-start: 0.1em;
+}
+
+.hero__rule {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  inline-size: min(70%, 20rem);
+  margin: var(--sp-2) auto var(--sp-4);
+  color: var(--gold-500);
+}
+
+.hero__rule::before,
+.hero__rule::after {
+  content: "";
+  flex: 1;
+  block-size: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-700));
+}
+
+.hero__rule::after {
+  background: linear-gradient(-90deg, transparent, var(--gold-700));
+}
+
+.hero__rule svg {
+  inline-size: 16px;
+  block-size: 16px;
+  fill: var(--ink-950);
+  stroke: var(--gold-500);
+  stroke-width: 1.4;
+}
+
+.hero__city {
+  font-size: var(--fs-600);
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--bone-100);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+}
+
+.hero__quarter {
+  font-size: var(--fs-500);
+  line-height: 1.45;
+  color: var(--bone-300);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+}
+
+.hero__family {
+  margin-block-start: var(--sp-1);
+  font-size: var(--fs-400);
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--green-300);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+}
+
+.hero__founded {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp-1) var(--sp-4);
+  margin-block-start: var(--sp-5);
+  color: var(--bone-300);
+  font-size: var(--fs-200);
+  line-height: 1.6;
+}
+
+.hero__founded-label {
+  color: var(--text-faint);
+}
+
+.hero__dates {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-1) var(--sp-5);
+  border-block: 1px solid rgba(138, 106, 43, 0.5);
+  color: var(--gold-300);
+  font-size: var(--fs-400);
+  font-weight: 700;
+}
+
+.hero__sep {
+  color: var(--blood-300);
+  font-size: 0.9em;
+}
+
+.js .hero [data-hero-line] {
+  opacity: 0;
+}
+
+.hero__cue {
+  position: absolute;
+  z-index: 3;
+  inset-block-end: var(--sp-5);
+  left: 50%;
+  translate: -50% 0;
+  display: grid;
+  justify-items: center;
+  gap: var(--sp-2);
+  min-inline-size: 44px;
+  color: var(--bone-300);
+  font-size: var(--fs-100);
+  text-decoration: none;
+}
+
+.hero__cue-line {
+  position: relative;
+  inline-size: 1px;
+  block-size: 46px;
+  background: linear-gradient(180deg, transparent, var(--gold-700));
+  overflow: hidden;
+}
+
+.hero__cue-line::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: -2px;
+  inline-size: 5px;
+  block-size: 8px;
+  border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+  background: var(--blood-400);
+  animation: cue-drop 2.6s var(--ease-breath) infinite;
+}
+
+@keyframes cue-drop {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+/* الشاشات القصيرة (حاسبات 768px): يُضغط البطل ليظهر كاملًا مع التاريخ */
+@media (min-width: 48em) and (max-height: 50em) {
+  .hero__content {
+    padding-block: calc(var(--header-h) + var(--sp-4)) var(--sp-9);
+  }
+  .hero__rule {
+    margin-block: var(--sp-1) var(--sp-3);
+  }
+  .hero__founded {
+    margin-block-start: var(--sp-4);
+  }
+  .hero__cue-line {
+    block-size: 30px;
+  }
+}
+
+@media (max-width: 47.99em) {
+  .hero {
+    display: grid;
+  }
+  .hero__photo {
+    inset: 0 0 auto;
+    block-size: 74svh;
+  }
+  .hero__photo img {
+    object-position: 50% 30%;
+  }
+  .hero__veil {
+    background:
+      linear-gradient(180deg, rgba(4, 2, 3, 0.8) 0%, transparent 16%),
+      linear-gradient(180deg, transparent 34%, rgba(4, 2, 3, 0.72) 56%, var(--ink-950) 74%);
+  }
+  .hero__content {
+    align-items: end;
+    padding-block: calc(var(--header-h) + var(--sp-6)) var(--sp-10);
+  }
+  .hero__text {
+    margin-inline: auto;
+  }
+  .hero__title {
+    font-size: clamp(2.875rem, 13.5vw, 4.5rem);
+  }
+}
+
+/* ---------- دعاء السجن ---------- */
+.interlude {
+  padding-block: var(--section-gap) var(--sp-8);
+}
+
+.interlude__figure {
+  display: grid;
+  justify-items: center;
+  gap: var(--sp-5);
+  text-align: center;
+}
+
+.interlude__star {
+  inline-size: 26px;
+  block-size: 26px;
+  fill: var(--blood-700);
+  stroke: var(--gold-500);
+  stroke-width: 1;
+}
+
+.interlude__text {
+  font-size: var(--fs-600);
+  line-height: 1.9;
+  color: var(--gold-300);
+}
+
+.interlude__cite {
+  color: var(--text-muted);
+  font-size: var(--fs-200);
+}
+
+/* ---------- أبواب الموقع ---------- */
+.chapters {
+  padding-block: var(--sp-8) 0;
+}
+
+.chapters__title {
+  margin-block-end: var(--sp-6);
+  color: var(--text-muted);
+  font-size: var(--fs-400);
+  text-align: center;
+}
+
+.chapters__list {
+  margin: 0;
+  padding: 0;
+  border-block-start: 1px solid var(--ink-600);
+}
+
+.chapters__list li {
+  border-block-end: 1px solid var(--ink-600);
+}
+
+.chapter {
+  position: relative;
+  display: grid;
+  grid-template-columns: 9rem 1fr auto;
+  grid-template-areas: "order name star" "order desc star";
+  align-items: center;
+  column-gap: var(--sp-6);
+  padding: var(--sp-6) var(--sp-4);
+  color: inherit;
+  text-decoration: none;
+  isolation: isolate;
+}
+
+.chapter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to left, rgba(92, 10, 16, 0.32), transparent 70%);
+  opacity: 0;
+  transition: opacity 500ms var(--ease-solemn);
+}
+
+.chapter:hover::before,
+.chapter:focus-visible::before {
+  opacity: 1;
+}
+
+.chapter__order {
+  grid-area: order;
+  color: var(--text-faint);
+  font-size: var(--fs-200);
+}
+
+.chapter__name {
+  grid-area: name;
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  line-height: 1.5;
+  color: var(--gold-300);
+}
+
+.chapter__desc {
+  grid-area: desc;
+  max-inline-size: 44em;
+  color: var(--text-muted);
+  font-size: var(--fs-300);
+  line-height: 1.85;
+}
+
+.chapter__star {
+  grid-area: star;
+  inline-size: 22px;
+  block-size: 22px;
+  fill: transparent;
+  stroke: var(--gold-700);
+  stroke-width: 1.2;
+  transition: transform 700ms var(--ease-solemn), fill 400ms var(--ease-solemn), stroke 400ms var(--ease-solemn);
+}
+
+.chapter:hover .chapter__star,
+.chapter:focus-visible .chapter__star {
+  transform: rotate(45deg);
+  fill: var(--blood-500);
+  stroke: var(--gold-300);
+}
+
+@media (max-width: 47.99em) {
+  .chapter {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "order star" "name star" "desc desc";
+    padding-inline: var(--sp-2);
+  }
+}

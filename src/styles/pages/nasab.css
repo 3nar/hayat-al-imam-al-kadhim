@@ -1,0 +1,276 @@
+/* ==========================================================================
+   صفحة النسب: الذهب لأئمة أهل البيت، والأخضر لنسب السادة
+   ========================================================================== */
+
+.parents,
+.lineage,
+.children {
+  margin-block-end: var(--section-gap);
+}
+
+.parents__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-7);
+}
+
+.parent {
+  display: grid;
+  align-content: start;
+  gap: var(--sp-3);
+}
+
+.parent__role {
+  color: var(--text-faint);
+  font-size: var(--fs-200);
+}
+
+.parent__name {
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  line-height: 1.5;
+  color: var(--gold-300);
+}
+
+.parent__quote {
+  margin-block-start: var(--sp-2);
+  padding-block: var(--sp-3);
+  border-block: 1px solid rgba(138, 106, 43, 0.4);
+  color: var(--gold-300);
+  font-size: var(--fs-500);
+  line-height: 1.8;
+  text-align: center;
+}
+
+@media (max-width: 47.99em) {
+  .parents__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- شجرة النسب ---------- */
+.lineage__intro {
+  max-inline-size: 36em;
+  margin: 0 auto var(--sp-5);
+  color: var(--text-muted);
+  font-size: var(--fs-400);
+  text-align: center;
+}
+
+.lineage__legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-3) var(--sp-6);
+  margin: 0 0 var(--sp-8);
+  padding: 0;
+  color: var(--text-muted);
+  font-size: var(--fs-200);
+}
+
+.lineage__legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.swatch {
+  inline-size: 14px;
+  block-size: 14px;
+  border: 1px solid;
+  rotate: 45deg;
+}
+
+.swatch--gold {
+  border-color: var(--gold-300);
+  background: var(--gold-700);
+}
+
+.swatch--green {
+  border-color: var(--green-300);
+  background: var(--green-600);
+}
+
+.tree {
+  --link: 2.75rem;
+  display: grid;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tree__node {
+  --grow: 1;
+  --line: var(--gold-700);
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: var(--sp-1);
+  inline-size: min(100%, 24rem);
+  margin-block-end: var(--link);
+  padding: var(--sp-3) var(--sp-5);
+  border: 1px solid var(--gold-700);
+  background: linear-gradient(180deg, var(--ink-700), var(--ink-800));
+  text-align: center;
+}
+
+.tree__node:last-child {
+  margin-block-end: 0;
+}
+
+/* الوصلة إلى الجيل التالي */
+.tree__node:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  inset-block-start: calc(100% + 1px);
+  left: 50%;
+  inline-size: 1px;
+  block-size: var(--link);
+  background: var(--line);
+  transform: translateX(-50%) scaleY(var(--grow));
+  transform-origin: top;
+}
+
+.tree__name {
+  color: var(--bone-100);
+  font-size: var(--fs-400);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.tree__role {
+  color: var(--text-muted);
+  font-size: var(--fs-200);
+  line-height: 1.6;
+}
+
+.tree__node--kadhim {
+  inline-size: min(100%, 30rem);
+  padding: var(--sp-5) var(--sp-6);
+  border-color: var(--gold-500);
+  outline: 1px solid rgba(201, 162, 74, 0.35);
+  outline-offset: 5px;
+  box-shadow: 0 0 40px rgba(176, 34, 43, 0.25);
+  --line: var(--green-400);
+}
+
+.tree__node--kadhim .tree__name {
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  font-weight: 700;
+  color: var(--gold-300);
+}
+
+.tree__node--sayyid {
+  --line: var(--green-400);
+  border-color: var(--green-600);
+  background: linear-gradient(180deg, rgba(18, 48, 31, 0.55), var(--ink-800));
+}
+
+.tree__node--sayyid .tree__name {
+  color: var(--green-300);
+}
+
+.tree__node--gap {
+  --line: transparent;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.tree__node--gap::before {
+  content: "";
+  display: block;
+  inline-size: 1px;
+  block-size: 3.5rem;
+  margin-block-end: var(--sp-2);
+  background: repeating-linear-gradient(180deg, var(--green-400) 0 4px, transparent 4px 10px);
+}
+
+.tree__node--gap::after {
+  background: repeating-linear-gradient(180deg, var(--green-400) 0 4px, transparent 4px 10px) !important;
+}
+
+.tree__node--here {
+  inline-size: min(100%, 30rem);
+  padding: var(--sp-5) var(--sp-6);
+  border-color: var(--green-300);
+  outline: 1px solid rgba(134, 185, 154, 0.35);
+  outline-offset: 5px;
+  background: linear-gradient(180deg, var(--green-800), var(--green-900));
+}
+
+.tree__node--here .tree__name {
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  color: var(--bone-100);
+}
+
+.tree__node--here .tree__role {
+  color: var(--green-300);
+}
+
+/* ---------- إبراهيم المجاب ---------- */
+.mujab {
+  margin-block-end: var(--section-gap);
+}
+
+.mujab__title {
+  margin-block-end: var(--sp-4);
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  color: var(--green-300);
+  text-align: center;
+}
+
+.mujab .prose {
+  max-inline-size: none;
+}
+
+/* ---------- الأبناء ---------- */
+.children__intro {
+  max-inline-size: 40em;
+  margin: 0 auto var(--sp-7);
+  color: var(--text-muted);
+  font-size: var(--fs-400);
+  text-align: center;
+}
+
+.children__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--sp-5);
+  margin: 0;
+  padding: 0;
+}
+
+.plaque {
+  display: grid;
+  align-content: start;
+  gap: var(--sp-2);
+  padding: var(--sp-5);
+  border-block-start: 2px solid var(--gold-500);
+  border-block-end: 1px solid var(--ink-600);
+  background: linear-gradient(180deg, rgba(201, 162, 74, 0.06), transparent 60%), var(--ink-800);
+}
+
+.plaque h3 {
+  color: var(--gold-300);
+  font-size: var(--fs-400);
+  line-height: 1.6;
+}
+
+.plaque p {
+  color: var(--text-muted);
+  font-size: var(--fs-300);
+  line-height: 1.85;
+}
+
+.plaque--sayyid {
+  border-block-start-color: var(--green-400);
+  background: linear-gradient(180deg, rgba(63, 125, 92, 0.12), transparent 60%), var(--ink-800);
+}
+
+.plaque--sayyid h3 {
+  color: var(--green-300);
+}

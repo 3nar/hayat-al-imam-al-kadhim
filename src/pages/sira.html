@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="{{v:lang}}" dir="{{v:dir}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{t:sira.docTitle}}</title>
+    <meta name="description" content="{{t:sira.description}}" />
+    <!--include:head-->
+  </head>
+  <body class="page-sira">
+    <!--include:header-->
+
+    <main id="main">
+      <canvas class="top-curtain" aria-hidden="true" data-top-curtain></canvas>
+      <header class="page-head container">
+        <span class="page-head__kicker">{{t:home.chapters.sira.order}}</span>
+        <h1 class="page-head__title">{{t:sira.title}}</h1>
+        <p class="page-head__lede">{{t:sira.lede}}</p>
+        <div class="divider" aria-hidden="true"><svg><use href="#i-star" /></svg></div>
+      </header>
+
+      <div class="story container">
+        <aside class="story__media" aria-hidden="true">
+          <div class="story__sticky">
+            <div class="arch">
+              <div class="arch__media" data-story-stack>
+                <img class="is-active" src="{{v:root}}img/steadfast-720.webp" srcset="{{v:root}}img/steadfast-720.webp 720w, {{v:root}}img/steadfast-1254.webp 1254w" sizes="(min-width: 64em) 34vw, 90vw" width="720" height="720" alt="" />
+                <img src="{{v:root}}img/prayer-chains-720.webp" srcset="{{v:root}}img/prayer-chains-720.webp 720w, {{v:root}}img/prayer-chains-1254.webp 1254w" sizes="(min-width: 64em) 34vw, 90vw" width="720" height="720" alt="" loading="lazy" />
+                <img src="{{v:root}}img/turban-720.webp" srcset="{{v:root}}img/turban-720.webp 720w, {{v:root}}img/turban-1254.webp 1254w" sizes="(min-width: 64em) 34vw, 90vw" width="720" height="720" alt="" loading="lazy" />
+              </div>
+              <svg class="arch__line" viewBox="0 0 100 125" preserveAspectRatio="none"><path d="M0 125V44C0 20 30 12 50 0C70 12 100 20 100 44V125Z" /></svg>
+            </div>
+            <p class="story__caption" data-story-caption>{{t:sira.circumstances.caption}}</p>
+          </div>
+        </aside>
+
+        <div class="story__text">
+          <section class="episode" data-episode data-image="0" data-caption="{{t:sira.circumstances.caption}}" aria-labelledby="ep-1">
+            <figure class="episode__figure">
+              <img src="{{v:root}}img/steadfast-720.webp" width="720" height="720" loading="lazy" alt="{{t:sira.circumstances.alt}}" />
+            </figure>
+            <h2 class="episode__title" id="ep-1">{{t:sira.circumstances.title}}</h2>
+            <div class="prose">{{t:sira.circumstances.body}}</div>
+          </section>
+
+          <section class="episode" data-episode data-image="1" data-caption="{{t:sira.prison.caption}}" aria-labelledby="ep-2">
+            <figure class="episode__figure">
+              <img src="{{v:root}}img/prayer-chains-720.webp" width="720" height="720" loading="lazy" alt="{{t:sira.prison.alt}}" />
+            </figure>
+            <h2 class="episode__title" id="ep-2">{{t:sira.prison.title}}</h2>
+            <div class="prose">
+              <p>{{t:sira.prison.intro}}</p>
+            </div>
+            <ol class="chain" role="list" data-chain>
+              <li class="chain__link">
+                <span class="chain__ring" aria-hidden="true"></span>
+                <div class="chain__text">
+                  <strong>{{t:sira.prison.medina.place}}</strong>
+                  <span>{{t:sira.prison.medina.note}}</span>
+                </div>
+              </li>
+              <li class="chain__link">
+                <span class="chain__ring" aria-hidden="true"></span>
+                <div class="chain__text">
+                  <strong>{{t:sira.prison.basra.place}}</strong>
+                  <span>{{t:sira.prison.basra.note}}</span>
+                </div>
+              </li>
+              <li class="chain__link">
+                <span class="chain__ring" aria-hidden="true"></span>
+                <div class="chain__text">
+                  <strong>{{t:sira.prison.rabi.place}}</strong>
+                  <span>{{t:sira.prison.rabi.note}}</span>
+                </div>
+              </li>
+              <li class="chain__link">
+                <span class="chain__ring" aria-hidden="true"></span>
+                <div class="chain__text">
+                  <strong>{{t:sira.prison.yahya.place}}</strong>
+                  <span>{{t:sira.prison.yahya.note}}</span>
+                </div>
+              </li>
+              <li class="chain__link chain__link--last">
+                <span class="chain__ring" aria-hidden="true"></span>
+                <div class="chain__text">
+                  <strong>{{t:sira.prison.sindi.place}}</strong>
+                  <span>{{t:sira.prison.sindi.note}}</span>
+                </div>
+              </li>
+            </ol>
+            <div class="prose">
+              <p>{{t:sira.prison.outro}}</p>
+            </div>
+          </section>
+
+          <section class="episode" data-episode data-image="2" data-caption="{{t:sira.martyrdom.caption}}" aria-labelledby="ep-3">
+            <figure class="episode__figure">
+              <img src="{{v:root}}img/turban-720.webp" width="720" height="720" loading="lazy" alt="{{t:sira.martyrdom.alt}}" />
+            </figure>
+            <h2 class="episode__title" id="ep-3">{{t:sira.martyrdom.title}}</h2>
+            <p class="martyr-date" data-reveal>
+              <span class="martyr-date__day">{{t:sira.martyrdom.day}}</span>
+              <span class="martyr-date__year">{{t:sira.martyrdom.year}}</span>
+            </p>
+            <div class="prose">{{t:sira.martyrdom.body}}</div>
+          </section>
+
+          <section class="episode" data-episode data-image="0" data-caption="{{t:sira.meaning.caption}}" aria-labelledby="ep-4">
+            <h2 class="episode__title" id="ep-4">{{t:sira.meaning.title}}</h2>
+            <div class="prose">
+              <p>{{t:sira.meaning.intro}}</p>
+            </div>
+            <dl class="meanings">
+              <div class="meanings__item" data-reveal>
+                <dt>{{t:sira.meaning.patience.name}}</dt>
+                <dd>{{t:sira.meaning.patience.text}}</dd>
+              </div>
+              <div class="meanings__item" data-reveal>
+                <dt>{{t:sira.meaning.steadfastness.name}}</dt>
+                <dd>{{t:sira.meaning.steadfastness.text}}</dd>
+              </div>
+              <div class="meanings__item" data-reveal>
+                <dt>{{t:sira.meaning.loyalty.name}}</dt>
+                <dd>{{t:sira.meaning.loyalty.text}}</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </div>
+
+      <nav class="next-chapter container" aria-label="{{t:common.nextChapter}}">
+        <a class="btn" href="./nasab.html">{{t:sira.next}}</a>
+      </nav>
+    </main>
+
+    <!--include:footer-->
+    <script type="module" src="{{v:root}}scripts/pages/sira.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="{{v:lang}}" dir="{{v:dir}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{t:imam.docTitle}}</title>
+    <meta name="description" content="{{t:imam.description}}" />
+    <!--include:head-->
+  </head>
+  <body class="page-imam">
+    <!--include:header-->
+
+    <main id="main">
+      <canvas class="top-curtain" aria-hidden="true" data-top-curtain></canvas>
+      <header class="page-head container">
+        <span class="page-head__kicker">{{t:home.chapters.imam.order}}</span>
+        <h1 class="page-head__title">{{t:imam.title}}</h1>
+        <p class="page-head__lede">{{t:imam.lede}}</p>
+        <div class="divider" aria-hidden="true"><svg><use href="#i-star" /></svg></div>
+      </header>
+
+      <section class="vitals container" aria-label="{{t:imam.vitals.aria}}">
+        <dl class="vitals__list frame" data-reveal>
+          <div class="vitals__item">
+            <dt>{{t:imam.vitals.birth.label}}</dt>
+            <dd>{{t:imam.vitals.birth.value}}<span>{{t:imam.vitals.birth.note}}</span></dd>
+          </div>
+          <div class="vitals__item">
+            <dt>{{t:imam.vitals.imamate.label}}</dt>
+            <dd>{{t:imam.vitals.imamate.value}}<span>{{t:imam.vitals.imamate.note}}</span></dd>
+          </div>
+          <div class="vitals__item">
+            <dt>{{t:imam.vitals.martyrdom.label}}</dt>
+            <dd>{{t:imam.vitals.martyrdom.value}}<span>{{t:imam.vitals.martyrdom.note}}</span></dd>
+          </div>
+          <div class="vitals__item">
+            <dt>{{t:imam.vitals.shrine.label}}</dt>
+            <dd>{{t:imam.vitals.shrine.value}}<span>{{t:imam.vitals.shrine.note}}</span></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="branches" aria-labelledby="branches-title">
+        <h2 class="visually-hidden" id="branches-title">{{t:imam.branchesTitle}}</h2>
+
+        <nav class="rail" aria-label="{{t:imam.railAria}}" data-rail>
+          <ol role="list">
+            <li><a href="#wilada" data-rail-link><svg aria-hidden="true"><use href="#i-star" /></svg><span>{{t:imam.wilada.title}}</span></a></li>
+            <li><a href="#alqab" data-rail-link><svg aria-hidden="true"><use href="#i-star" /></svg><span>{{t:imam.alqab.title}}</span></a></li>
+            <li><a href="#akhlaq" data-rail-link><svg aria-hidden="true"><use href="#i-star" /></svg><span>{{t:imam.akhlaq.title}}</span></a></li>
+            <li><a href="#ilm" data-rail-link><svg aria-hidden="true"><use href="#i-star" /></svg><span>{{t:imam.ilm.title}}</span></a></li>
+            <li><a href="#hifz" data-rail-link><svg aria-hidden="true"><use href="#i-star" /></svg><span>{{t:imam.hifz.rail}}</span></a></li>
+            <li><a href="#makana" data-rail-link><svg aria-hidden="true"><use href="#i-star" /></svg><span>{{t:imam.makana.title}}</span></a></li>
+          </ol>
+        </nav>
+
+        <div class="branches__inner container">
+          <div class="spine" aria-hidden="true" data-spine>
+            <span class="spine__track"></span>
+            <span class="spine__thread" data-spine-thread></span>
+            <span class="spine__tip" data-spine-tip></span>
+          </div>
+
+          <ol class="branches__list" role="list">
+            <li class="branch" id="wilada" data-branch>
+              <span class="branch__node" aria-hidden="true"><svg><use href="#i-star" /></svg></span>
+              <span class="branch__arm" aria-hidden="true"></span>
+              <article class="branch__card frame">
+                <h3 class="branch__title">{{t:imam.wilada.title}}</h3>
+                <div class="prose">{{t:imam.wilada.body}}</div>
+                <p class="branch__lineage">{{t:imam.wilada.lineage}}</p>
+                <p class="branch__note">{{t:imam.wilada.kunya}}</p>
+              </article>
+            </li>
+
+            <li class="branch" id="alqab" data-branch>
+              <span class="branch__node" aria-hidden="true"><svg><use href="#i-star" /></svg></span>
+              <span class="branch__arm" aria-hidden="true"></span>
+              <article class="branch__card frame">
+                <h3 class="branch__title">{{t:imam.alqab.title}}</h3>
+                <p class="branch__intro">{{t:imam.alqab.intro}}</p>
+                <dl class="titles">
+                  <div class="titles__item">
+                    <dt>{{t:imam.alqab.kadhim.name}}</dt>
+                    <dd>{{t:imam.alqab.kadhim.why}}</dd>
+                  </div>
+                  <div class="titles__item">
+                    <dt>{{t:imam.alqab.salih.name}}</dt>
+                    <dd>{{t:imam.alqab.salih.why}}</dd>
+                  </div>
+                  <div class="titles__item">
+                    <dt>{{t:imam.alqab.hawaij.name}}</dt>
+                    <dd>{{t:imam.alqab.hawaij.why}}</dd>
+                  </div>
+                  <div class="titles__item">
+                    <dt>{{t:imam.alqab.sabir.name}}</dt>
+                    <dd>{{t:imam.alqab.sabir.why}}</dd>
+                  </div>
+                </dl>
+              </article>
+            </li>
+
+            <li class="branch" id="akhlaq" data-branch>
+              <span class="branch__node" aria-hidden="true"><svg><use href="#i-star" /></svg></span>
+              <span class="branch__arm" aria-hidden="true"></span>
+              <article class="branch__card frame">
+                <h3 class="branch__title">{{t:imam.akhlaq.title}}</h3>
+                <div class="prose">{{t:imam.akhlaq.body}}</div>
+              </article>
+            </li>
+
+            <li class="branch" id="ilm" data-branch>
+              <span class="branch__node" aria-hidden="true"><svg><use href="#i-star" /></svg></span>
+              <span class="branch__arm" aria-hidden="true"></span>
+              <article class="branch__card frame">
+                <h3 class="branch__title">{{t:imam.ilm.title}}</h3>
+                <div class="prose">
+                  <p>{{t:imam.ilm.sujud}}</p>
+                  <blockquote class="branch__quote">{{t:imam.ilm.dua}}</blockquote>
+                  <p>{{t:imam.ilm.prison}}</p>
+                  <p>{{t:imam.ilm.knowledge}}</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="branch" id="hifz" data-branch>
+              <span class="branch__node" aria-hidden="true"><svg><use href="#i-star" /></svg></span>
+              <span class="branch__arm" aria-hidden="true"></span>
+              <article class="branch__card frame">
+                <h3 class="branch__title">{{t:imam.hifz.title}}</h3>
+                <div class="prose">
+                  <p>{{t:imam.hifz.context}}</p>
+                </div>
+                <ul class="deeds" role="list">
+                  <li>{{t:imam.hifz.deed1}}</li>
+                  <li>{{t:imam.hifz.deed2}}</li>
+                  <li>{{t:imam.hifz.deed3}}</li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="branch" id="makana" data-branch>
+              <span class="branch__node" aria-hidden="true"><svg><use href="#i-star" /></svg></span>
+              <span class="branch__arm" aria-hidden="true"></span>
+              <article class="branch__card frame">
+                <h3 class="branch__title">{{t:imam.makana.title}}</h3>
+                <div class="prose">
+                  <p>{{t:imam.makana.body}}</p>
+                </div>
+                <figure class="branch__witness">
+                  <blockquote>{{t:imam.makana.quote}}</blockquote>
+                  <figcaption>{{t:imam.makana.quoteSource}}</figcaption>
+                </figure>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <nav class="next-chapter container" aria-label="{{t:common.nextChapter}}">
+        <a class="btn" href="./sira.html">{{t:imam.next}}</a>
+      </nav>
+    </main>
+
+    <!--include:footer-->
+    <script type="module" src="{{v:root}}scripts/pages/imam.js"></script>
+  </body>
+</html>

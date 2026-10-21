@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="{{v:lang}}" dir="{{v:dir}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{t:nasab.docTitle}}</title>
+    <meta name="description" content="{{t:nasab.description}}" />
+    <!--include:head-->
+  </head>
+  <body class="page-nasab">
+    <!--include:header-->
+
+    <main id="main">
+      <canvas class="top-curtain" aria-hidden="true" data-top-curtain></canvas>
+      <header class="page-head container">
+        <span class="page-head__kicker">{{t:home.chapters.nasab.order}}</span>
+        <h1 class="page-head__title">{{t:nasab.title}}</h1>
+        <p class="page-head__lede">{{t:nasab.lede}}</p>
+        <div class="divider" aria-hidden="true"><svg><use href="#i-star" /></svg></div>
+      </header>
+
+      <section class="parents container" aria-labelledby="parents-title">
+        <h2 class="section-title" id="parents-title" data-reveal>{{t:nasab.parents.title}}</h2>
+        <div class="parents__grid">
+          <article class="parent frame" data-reveal>
+            <span class="parent__role">{{t:nasab.parents.father.role}}</span>
+            <h3 class="parent__name">{{t:nasab.parents.father.name}}</h3>
+            <p>{{t:nasab.parents.father.text}}</p>
+          </article>
+          <article class="parent frame" data-reveal>
+            <span class="parent__role">{{t:nasab.parents.mother.role}}</span>
+            <h3 class="parent__name">{{t:nasab.parents.mother.name}}</h3>
+            <p>{{t:nasab.parents.mother.text}}</p>
+            <blockquote class="parent__quote">{{t:nasab.parents.mother.quote}}</blockquote>
+          </article>
+        </div>
+      </section>
+
+      <section class="lineage container" aria-labelledby="lineage-title">
+        <h2 class="section-title" id="lineage-title" data-reveal>{{t:nasab.lineage.title}}</h2>
+        <p class="lineage__intro" data-reveal>{{t:nasab.lineage.intro}}</p>
+
+        <ul class="lineage__legend" role="list" data-reveal>
+          <li><span class="swatch swatch--gold" aria-hidden="true"></span>{{t:nasab.lineage.legendImams}}</li>
+          <li><span class="swatch swatch--green" aria-hidden="true"></span>{{t:nasab.lineage.legendSayyids}}</li>
+        </ul>
+
+        <ol class="tree" role="list" data-tree>
+          <li class="tree__node">
+            <span class="tree__name">{{t:nasab.tree.ali.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.ali.role}}</span>
+          </li>
+          <li class="tree__node">
+            <span class="tree__name">{{t:nasab.tree.husayn.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.husayn.role}}</span>
+          </li>
+          <li class="tree__node">
+            <span class="tree__name">{{t:nasab.tree.sajjad.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.sajjad.role}}</span>
+          </li>
+          <li class="tree__node">
+            <span class="tree__name">{{t:nasab.tree.baqir.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.baqir.role}}</span>
+          </li>
+          <li class="tree__node">
+            <span class="tree__name">{{t:nasab.tree.sadiq.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.sadiq.role}}</span>
+          </li>
+          <li class="tree__node tree__node--kadhim">
+            <span class="tree__name">{{t:nasab.tree.kadhim.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.kadhim.role}}</span>
+          </li>
+          <li class="tree__node tree__node--sayyid">
+            <span class="tree__name">{{t:nasab.tree.abid.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.abid.role}}</span>
+          </li>
+          <li class="tree__node tree__node--sayyid">
+            <span class="tree__name">{{t:nasab.tree.mujab.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.mujab.role}}</span>
+          </li>
+          <li class="tree__node tree__node--gap" aria-label="{{t:nasab.tree.gap}}">
+            <span class="tree__role">{{t:nasab.tree.gap}}</span>
+          </li>
+          <li class="tree__node tree__node--sayyid">
+            <span class="tree__name">{{t:nasab.tree.nasir.name}}</span>
+          </li>
+          <li class="tree__node tree__node--sayyid tree__node--here">
+            <span class="tree__name">{{t:nasab.tree.sons.name}}</span>
+            <span class="tree__role">{{t:nasab.tree.sons.role}}</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="mujab container container--narrow" aria-labelledby="mujab-title">
+        <div class="mujab__card frame frame--green" data-reveal>
+          <h2 class="mujab__title" id="mujab-title">{{t:nasab.mujab.title}}</h2>
+          <div class="prose">{{t:nasab.mujab.body}}</div>
+        </div>
+      </section>
+
+      <section class="children container" aria-labelledby="children-title">
+        <h2 class="section-title" id="children-title" data-reveal>{{t:nasab.children.title}}</h2>
+        <p class="children__intro" data-reveal>{{t:nasab.children.intro}}</p>
+        <ul class="children__grid" role="list">
+          <li class="plaque" data-reveal>
+            <h3>{{t:nasab.children.rida.name}}</h3>
+            <p>{{t:nasab.children.rida.text}}</p>
+          </li>
+          <li class="plaque" data-reveal>
+            <h3>{{t:nasab.children.masuma.name}}</h3>
+            <p>{{t:nasab.children.masuma.text}}</p>
+          </li>
+          <li class="plaque" data-reveal>
+            <h3>{{t:nasab.children.ahmad.name}}</h3>
+            <p>{{t:nasab.children.ahmad.text}}</p>
+          </li>
+          <li class="plaque plaque--sayyid" data-reveal>
+            <h3>{{t:nasab.children.muhammad.name}}</h3>
+            <p>{{t:nasab.children.muhammad.text}}</p>
+          </li>
+        </ul>
+      </section>
+
+      <nav class="next-chapter container" aria-label="{{t:common.nextChapter}}">
+        <a class="btn" href="./hayaa.html">{{t:nasab.next}}</a>
+      </nav>
+    </main>
+
+    <!--include:footer-->
+    <script type="module" src="{{v:root}}scripts/pages/nasab.js"></script>
+  </body>
+</html>

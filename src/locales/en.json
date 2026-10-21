@@ -1,0 +1,398 @@
+{
+  "meta": {
+    "lang": "en",
+    "dir": "ltr",
+    "name": "English",
+    "short": "EN",
+    "script": "latin"
+  },
+  "common": {
+    "skip": "Skip to content",
+    "brandName": "Descendants of Imam al-Kadhim",
+    "brandAria": "Descendants of Imam al-Kadhim, home page",
+    "navAria": "Main navigation",
+    "nav": {
+      "index": "Home",
+      "imam": "Imam al-Kadhim",
+      "sira": "Life & Martyrdom",
+      "nasab": "Lineage & Family",
+      "hayaa": "The Association"
+    },
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close",
+    "menuFoot": "Descendants of Imam al-Kadhim (AS) Association, Holy Najaf",
+    "orgName": "Descendants of Imam al-Kadhim <span class='alayh'>(AS)</span>",
+    "place": "Holy Najaf, al-Iskan Quarter",
+    "family": "Sons of Sayyid Nasir",
+    "ziyaraOriginal": "السَّلامُ عَلَى المُعَذَّبِ فِي قَعْرِ السُّجُونِ، وَظُلَمِ المَطامِيرِ، ذِي السّاقِ المَرْضُوضِ بِحَلَقِ القُيُودِ",
+    "ziyara": "Peace be upon the one tormented in the depths of prisons and the darkness of dungeons, whose legs were bruised by the rings of shackles.",
+    "ziyaraCite": "From the Ziyarah of Imam Musa ibn Ja'far al-Kadhim (AS)",
+    "footerNavAria": "Footer links",
+    "condolence": "May God grant us and you great reward in our grief for Imam Musa ibn Ja'far al-Kadhim (AS)",
+    "copyright": "Descendants of Imam al-Kadhim (AS) Association, 2026",
+    "nextChapter": "Next chapter"
+  },
+  "home": {
+    "docTitle": "Descendants of Imam al-Kadhim (AS) | Holy Najaf",
+    "description": "The Descendants of Imam al-Kadhim (AS), a Husseini association in the al-Iskan quarter of Holy Najaf led by the sons of Sayyid Nasir: the life, oppression and lineage of Imam Musa ibn Ja'far al-Kadhim (AS), and the association's mourning gatherings.",
+    "heroAlt": "Artistic depiction of a prisoner with bound hands kneeling in a dark cell beneath a barred window through which red light seeps, evoking the imprisonment of Imam al-Kadhim (AS)",
+    "titleLine1": "Descendants of",
+    "titleLine2": "Imam al-Kadhim <span class='alayh hero__alayh'>(AS)</span>",
+    "city": "Holy Najaf",
+    "quarter": "Al-Iskan Quarter",
+    "family": "Sons of Sayyid Nasir",
+    "foundedLabel": "Founded in",
+    "foundedHijri": "1447 AH",
+    "foundedGregorian": "2026 CE",
+    "cue": "Continue",
+    "prayerAria": "From the Imam's supplication in prison",
+    "prayerOriginal": "اللّهُمَّ إنّي كُنتُ أسألُكَ أن تُفَرِّغَني لِعِبادَتِك، اللّهُمَّ وقَد فَعَلت، فَلَكَ الحَمد",
+    "prayer": "O God, I used to ask You to free me for Your worship. O God, You have done so; to You belongs all praise.",
+    "prayerCite": "From the supplication of Imam Musa ibn Ja'far al-Kadhim (AS) in his prison",
+    "chaptersTitle": "Chapters",
+    "chapters": {
+      "imam": {
+        "order": "Chapter One",
+        "name": "Imam Musa ibn Ja'far al-Kadhim <span class='alayh'>(AS)</span>",
+        "desc": "His birth and lineage, his titles, his character, his knowledge and worship, his role in preserving Islam, and his standing among Muslims."
+      },
+      "sira": {
+        "order": "Chapter Two",
+        "name": "Life, Oppression and Martyrdom",
+        "desc": "What the Imam endured under the Abbasids, his prisons from Basra to Baghdad, and the accounts of his martyrdom in 183 AH."
+      },
+      "nasab": {
+        "order": "Chapter Three",
+        "name": "The Imam's Family and Lineage",
+        "desc": "His father Imam al-Sadiq (AS), his mother Lady Hamida, his children, and his noble lineage from the Commander of the Faithful (AS) to his descendants."
+      },
+      "hayaa": {
+        "order": "Chapter Four",
+        "name": "Descendants of Imam al-Kadhim <span class='alayh'>(AS)</span>",
+        "desc": "Why it was founded, its founders the sons of Sayyid Nasir, its mission, and the mourning gatherings it holds."
+      }
+    }
+  },
+  "imam": {
+    "docTitle": "Imam Musa ibn Ja'far al-Kadhim (AS) | Descendants of Imam al-Kadhim",
+    "description": "Imam Musa ibn Ja'far al-Kadhim (AS): his birth and lineage, titles, character, knowledge and worship, his role in preserving the teachings of Islam, and his standing among Muslims.",
+    "title": "Imam Musa ibn Ja'far al-Kadhim <span class='alayh'>(peace be upon him)</span>",
+    "lede": "The seventh Imam of the Ahl al-Bayt (AS). Born at al-Abwa, he died a martyr in the Abbasid prisons of Baghdad after an imamate of thirty-five years, known throughout as the one of long prostrations and the Gate of Needs to God.",
+    "vitals": {
+      "aria": "The Imam at a glance",
+      "birth": {
+        "label": "Birth",
+        "value": "7 Safar 128 AH",
+        "note": "Al-Abwa, between Mecca and Medina"
+      },
+      "imamate": {
+        "label": "Imamate",
+        "value": "148 to 183 AH",
+        "note": "Thirty-five years"
+      },
+      "martyrdom": {
+        "label": "Martyrdom",
+        "value": "25 Rajab 183 AH",
+        "note": "In the prison of al-Sindi ibn Shahik, Baghdad"
+      },
+      "shrine": {
+        "label": "Shrine",
+        "value": "Holy Kadhimiya",
+        "note": "The Quraysh cemetery, Baghdad"
+      }
+    },
+    "branchesTitle": "The Imam's life in six chapters",
+    "railAria": "Page sections",
+    "wilada": {
+      "title": "Birth and Lineage",
+      "body": "<p>Imam Musa ibn Ja'far (AS) was born at <strong>al-Abwa</strong>, a halt between Mecca and Medina, on 7 Safar 128 AH according to the best-known account. His father, Imam al-Sadiq (AS), was returning from the Hajj and greeted his birth with joy.</p><p>His father was Imam Ja'far ibn Muhammad al-Sadiq (AS), the sixth Imam of the Ahl al-Bayt, and his mother was Lady Hamida the Purified, of whom Imam al-Sadiq (AS) said: “Hamida is purified of all impurity, like an ingot of gold.”</p>",
+      "lineage": "Musa ibn Ja'far ibn Muhammad ibn Ali ibn al-Husayn ibn Ali ibn Abi Talib <span>(peace be upon them)</span>",
+      "kunya": "He was known as Abu al-Hasan and Abu Ibrahim."
+    },
+    "alqab": {
+      "title": "His Titles",
+      "intro": "Each of his titles tells a story that bears witness to one of his qualities:",
+      "kadhim": {
+        "name": "Al-Kadhim",
+        "why": "“The one who restrains his anger”: he swallowed his anger and answered harm with kindness, until the title eclipsed his name."
+      },
+      "salih": {
+        "name": "The Righteous Servant",
+        "why": "A title by which narrators knew him, for his abundant worship and long prostrations."
+      },
+      "hawaij": {
+        "name": "The Gate of Needs",
+        "why": "Because people found their needs fulfilled when they sought his intercession with God Almighty."
+      },
+      "sabir": {
+        "name": "The Patient, the Trustworthy",
+        "why": "For his patience through trial and imprisonment, and his faithfulness to the religion of his grandfather, the Messenger of God (PBUH)."
+      }
+    },
+    "akhlaq": {
+      "title": "His Character",
+      "body": "<p>He answered harm with kindness. It is narrated that a man of Medina used to insult him and speak ill of the Commander of the Faithful (AS). Some of his companions wanted to strike the man, but he forbade them. Instead he visited the man at his farm, treated him generously and gave him money, until the man's heart changed and he began to say: “God knows best where to place His message.”</p><p>By night he looked after the poor of Medina, carrying purses of dinars to them while they never knew where the gifts came from, until people made a proverb of “the purses of Musa”.</p>"
+    },
+    "ilm": {
+      "title": "Knowledge and Worship",
+      "sujud": "He was known for prostrations so long that he was called “the companion of the long prostration”. Among his supplications in prostration:",
+      "dua": "“Great is the sin of Your servant; so let the pardon from You be beautiful.”",
+      "prison": "When he was imprisoned he said: “O God, I used to ask You to free me for Your worship. O God, You have done so; to You belongs all praise.” He turned his cell into a place of prayer.",
+      "knowledge": "He was the reference of his age in knowledge. His companions, and those of his father, narrated a great deal of hadith and jurisprudence from him, and among the most precious of his teachings is his counsel to Hisham ibn al-Hakam on reason and wisdom."
+    },
+    "hifz": {
+      "title": "His Role in Preserving the Teachings of Islam",
+      "rail": "Preserving Islam",
+      "context": "He assumed the imamate in 148 AH after his father's martyrdom, in the reign of the Abbasid caliph al-Mansur, and lived on under al-Mahdi, al-Hadi and Harun al-Rashid, while the authorities watched the Ahl al-Bayt (AS) and their followers and pressed hard upon them.",
+      "deed1": "He preserved the school of his father Imam al-Sadiq (AS), passing jurisprudence, hadith and doctrine on to his companions.",
+      "deed2": "He built a network of representatives across the lands, linking people to their Imam and carrying his answers back to them.",
+      "deed3": "He refused to lend legitimacy to the oppressor: he reproached Safwan the camel-hirer for renting his camels to Harun, even for the road to Hajj, to teach his companions not to incline toward those who do wrong."
+    },
+    "makana": {
+      "title": "His Standing among Muslims",
+      "body": "Muslims agree on his knowledge, his worship and his generosity. His shrine in Kadhimiya, Baghdad, beside his grandson Imam Muhammad al-Jawad (AS), draws pilgrims from every corner of the world, and millions walk to it each year on the anniversary of his martyrdom.",
+      "quote": "“Whenever a matter troubled me and I went to the grave of Musa ibn Ja'far and sought intercession through him, God made easy for me what I wished.”",
+      "quoteSource": "Abu Ali al-Khallal, the leading Hanbali scholar of his time, as narrated by al-Khatib al-Baghdadi in Tarikh Baghdad"
+    },
+    "next": "Chapter Two: Life, Oppression and Martyrdom"
+  },
+  "sira": {
+    "docTitle": "Life, Oppression and Martyrdom of the Imam | Descendants of Imam al-Kadhim",
+    "description": "The circumstances of Imam Musa al-Kadhim (AS), his prisons from Basra to Baghdad, the accounts of his martyrdom in 183 AH, and the meanings of patience and steadfastness in his memory.",
+    "title": "Life, Oppression and Martyrdom",
+    "lede": "Thirty-five years of imamate, the last of them spent between shackles and dungeons; yet prison only drew him nearer to his Lord.",
+    "circumstances": {
+      "caption": "Steadfast in chains",
+      "alt": "Artistic depiction of the Imam (AS) bound in chains, raising his finger to the sky, his face bathed in light",
+      "title": "The Times He Lived In",
+      "body": "<p>Imam Musa al-Kadhim (AS) assumed the imamate in 148 AH after the martyrdom of his father Imam al-Sadiq (AS), with the Abbasid state at the height of its tyranny. Al-Mansur had resolved to kill whomever Imam al-Sadiq named as his successor, so the Imam (AS) named five people in his will, the first of them al-Mansur himself, to protect his son from being killed.</p><p>He then lived under al-Mahdi, who had him brought to Baghdad and later released, and under al-Hadi after him, until Harun al-Rashid came to power. The persecution of the Ahl al-Bayt (AS) and their followers intensified; the Imam watched his companions hunted and imprisoned, while he remained patient, preserving the religion of his grandfather and strengthening the patience of his followers.</p>"
+    },
+    "prison": {
+      "caption": "A prayer in the dungeon",
+      "alt": "Artistic depiction of a kneeling prisoner raising his palms in prayer, chains on his wrists, in the darkness of a dungeon",
+      "title": "Imprisonment, from Medina to Baghdad",
+      "intro": "In 179 AH Harun ordered the Imam's arrest. He was seized while standing in prayer at the grave of his grandfather, the Messenger of God (PBUH), and a long journey through prisons began, each link harsher than the one before:",
+      "medina": {
+        "place": "Medina, 179 AH",
+        "note": "Arrested in his grandfather's mosque and carried off in chains."
+      },
+      "basra": {
+        "place": "Basra: the prison of Isa ibn Ja'far",
+        "note": "About a year, until Isa, moved by the Imam's worship, wrote to Harun asking to be relieved of him."
+      },
+      "rabi": {
+        "place": "Baghdad: the prison of al-Fadl ibn al-Rabi'",
+        "note": "Moved to the capital of the caliphate, where his imprisonment grew long."
+      },
+      "yahya": {
+        "place": "Baghdad: the prison of al-Fadl ibn Yahya",
+        "note": "He eased the Imam's confinement and was punished for it."
+      },
+      "sindi": {
+        "place": "Baghdad: the prison of al-Sindi ibn Shahik",
+        "note": "The harshest and cruelest of the prisons, where his martyrdom came."
+      },
+      "outro": "In the darkness of the dungeons the Imam neither complained nor compromised. He spent his nights and days in prostration, until his jailers were overwhelmed by his worship, and he said: “O God, I used to ask You to free me for Your worship. O God, You have done so; to You belongs all praise.”"
+    },
+    "martyrdom": {
+      "caption": "The green turban",
+      "alt": "A green turban stained with blood, resting on a stone, symbolizing the martyrdom of the Imam (AS)",
+      "title": "Accounts of His Martyrdom",
+      "day": "25 Rajab",
+      "year": "183 AH",
+      "body": "<p>In the prison of al-Sindi ibn Shahik he was poisoned on Harun's orders, and he died a martyr on 25 Rajab 183 AH according to the best-known account, at the age of fifty-five.</p><p>Wanting to clear the authorities of blame, al-Sindi brought a group of Baghdad's notables to the Imam so they would testify that he had come to no harm; but the Imam (AS) told them that he had been poisoned.</p><p>His pure body was then laid on the bridge of Baghdad and a call meant to belittle him was proclaimed over it, until Sulayman ibn Abi Ja'far came out, took up the body and shrouded it. The people carried him in procession to the Quraysh cemetery, where his shrine stands today in Holy Kadhimiya.</p>"
+    },
+    "meaning": {
+      "caption": "Patience and steadfastness",
+      "title": "What the Anniversary Means",
+      "intro": "Prison did not break the Imam; it revealed his true metal: patience that never complains, prostration that no shackle can interrupt, and steadfastness in the truth that never bargains. That is why the day of his martyrdom became a time to renew the covenant.",
+      "patience": {
+        "name": "Patience",
+        "text": "That the heart remain content with God's decree, however narrow the walls."
+      },
+      "steadfastness": {
+        "name": "Steadfastness",
+        "text": "That the oppressor be given no legitimacy, even at the cost of a whole life."
+      },
+      "loyalty": {
+        "name": "Loyalty",
+        "text": "That the memory be revived every year: pilgrims walk to Kadhimiya, and gatherings are held in homes and associations."
+      }
+    },
+    "next": "Chapter Three: The Imam's Family and Lineage"
+  },
+  "nasab": {
+    "docTitle": "The Imam's Family and Lineage | Descendants of Imam al-Kadhim",
+    "description": "The father of Imam al-Kadhim (AS), Imam Ja'far al-Sadiq; his mother, Lady Hamida; his children and household; and his noble lineage reaching Imam al-Husayn and Imam Ali (AS), down to the sayyids, the sons of Sayyid Nasir.",
+    "title": "The Imam's Family and Lineage",
+    "lede": "A lineage whose links are never broken: from the Commander of the Faithful (AS) to Imam al-Kadhim (AS), and from him to the descendants who carry his name today.",
+    "parents": {
+      "title": "His Parents",
+      "father": {
+        "role": "Father",
+        "name": "Imam Ja'far ibn Muhammad al-Sadiq <span class='alayh'>(AS)</span>",
+        "text": "The sixth Imam of the Ahl al-Bayt (AS) and head of the greatest school of learning of his age, where thousands of narrators and scholars studied; the Ja'fari school bears his name. From him Imam al-Kadhim (AS) received knowledge and the imamate."
+      },
+      "mother": {
+        "role": "Mother",
+        "name": "Lady Hamida the Purified",
+        "text": "She was known for her knowledge, piety and chastity, and Imam al-Sadiq (AS) praised her. Among his words about her:",
+        "quote": "“Hamida is purified of all impurity, like an ingot of gold.”"
+      }
+    },
+    "lineage": {
+      "title": "The Noble Lineage",
+      "intro": "Hashimite, Alawite, Husaynite; from his descendants come the Musawi sayyids, among them the sons of Sayyid Nasir.",
+      "legendImams": "Imams of the Ahl al-Bayt (AS)",
+      "legendSayyids": "Sayyids descended from Imam al-Kadhim (AS)"
+    },
+    "tree": {
+      "ali": {
+        "name": "Imam Ali ibn Abi Talib (AS)",
+        "role": "Commander of the Faithful"
+      },
+      "husayn": {
+        "name": "Imam al-Husayn ibn Ali (AS)",
+        "role": "Master of Martyrs"
+      },
+      "sajjad": {
+        "name": "Imam Ali ibn al-Husayn (AS)",
+        "role": "Zayn al-Abidin, al-Sajjad"
+      },
+      "baqir": {
+        "name": "Imam Muhammad ibn Ali (AS)",
+        "role": "Al-Baqir"
+      },
+      "sadiq": {
+        "name": "Imam Ja'far ibn Muhammad (AS)",
+        "role": "Al-Sadiq"
+      },
+      "kadhim": {
+        "name": "Imam Musa ibn Ja'far al-Kadhim <span class='alayh'>(AS)</span>",
+        "role": "Gate of Needs"
+      },
+      "abid": {
+        "name": "Sayyid Muhammad al-Abid",
+        "role": "Son of Imam al-Kadhim (AS)"
+      },
+      "mujab": {
+        "name": "Sayyid Ibrahim al-Mujab",
+        "role": "Buried in the Husayni shrine in Karbala"
+      },
+      "gap": "The chain of noble forefathers",
+      "nasir": {
+        "name": "Sayyid Nasir"
+      },
+      "sons": {
+        "name": "Sons of Sayyid Nasir",
+        "role": "Descendants of Imam al-Kadhim (AS) Association, Holy Najaf"
+      }
+    },
+    "mujab": {
+      "title": "Sayyid Ibrahim al-Mujab",
+      "body": "<p>He is Ibrahim, son of Muhammad al-Abid, son of Imam Musa al-Kadhim (AS). He is said to have been the first of the Alawites to settle beside the shrine of Imam al-Husayn, and his tomb lies today within the Husayni shrine in holy Karbala.</p><p>He was called “al-Mujab”, the one who was answered, because he stood at the grave of his forefather al-Husayn (AS) and said: “Peace be upon you, O father,” and an answer was heard from the grave: “And upon you be peace, O my son.”</p><p>From his descendants the Musawi sayyids spread across Iraq, among them the sons of Sayyid Nasir, who founded this association.</p>"
+    },
+    "children": {
+      "title": "His Children and Household",
+      "intro": "Sheikh al-Mufid records that Imam al-Kadhim (AS) had thirty-seven children, sons and daughters, whose descendants spread across many lands. Among the most renowned:",
+      "rida": {
+        "name": "Imam Ali ibn Musa al-Rida <span class='alayh'>(AS)</span>",
+        "text": "The eighth Imam of the Ahl al-Bayt (AS); his shrine is in Mashhad."
+      },
+      "masuma": {
+        "name": "Lady Fatima al-Ma'suma <span class='alayh'>(SA)</span>",
+        "text": "The noble lady of the Ahl al-Bayt; her shrine is in Qom."
+      },
+      "ahmad": {
+        "name": "Sayyid Ahmad ibn Musa",
+        "text": "Known as Shah Cheragh; his shrine is in Shiraz."
+      },
+      "muhammad": {
+        "name": "Sayyid Muhammad ibn Musa al-Abid",
+        "text": "Called al-Abid, “the worshipper”, for his abundant prayer and devotion; his shrine is in Shiraz, and the sons of Sayyid Nasir descend from him."
+      }
+    },
+    "next": "Chapter Four: Descendants of Imam al-Kadhim (AS)"
+  },
+  "hayaa": {
+    "docTitle": "Descendants of Imam al-Kadhim (AS) | Holy Najaf, al-Iskan Quarter",
+    "description": "The Descendants of Imam al-Kadhim (AS) Association: why it was founded, when it began, its founders the sons of Sayyid Nasir, its mission, and the mourning gatherings it holds.",
+    "title": "Descendants of Imam al-Kadhim <span class='alayh'>(AS)</span>",
+    "lede": "A Husseini association in the al-Iskan quarter of Holy Najaf, led by the sons of Sayyid Nasir.",
+    "who": {
+      "title": "Who we are",
+      "statement": "We are Hashimite, Alawite, Husaynite and Musawi sayyids. Our lineage reaches Sayyid Ibrahim al-Mujab, son of Sayyid Muhammad al-Abid, son of Imam Musa ibn Ja'far al-Kadhim (AS); we are his descendants, and from this the association takes its name.",
+      "link": "The full family tree"
+    },
+    "founding": {
+      "title": "Why We Began",
+      "p1": "This association was not born from nothing. The gathering we hold today is an old one, kept alive by our fathers and grandfathers since long ago. Year after year they lit within it the lamp of grief for the tragedy of the Ahl al-Bayt (AS), with whatever means they had and with hearts that never tired.",
+      "p2": "That is how we were raised: grief for al-Husayn and his family (AS) is a covenant that never lapses, and being a sayyid is not a lineage to be recited but a character to be lived.",
+      "virtue1": "Generosity of hand",
+      "virtue2": "Restraint of anger",
+      "virtue3": "Ties of kinship",
+      "virtue4": "Patience under harm",
+      "p3": "These are the qualities of our forefathers from the family of Muhammad (PBUH), foremost among them our grandfather Imam Musa ibn Ja'far (AS), who was named al-Kadhim because he restrained his anger.",
+      "p4": "So that this gathering may endure after us as it endured after our fathers, the sons of Sayyid Nasir came together to give this legacy the form of an association bearing their grandfather's name."
+    },
+    "launch": {
+      "title": "From Gathering to Association",
+      "past": {
+        "tag": "Then",
+        "when": "Since the days of our forefathers",
+        "what": "An old mourning gathering, held in the homes of the sayyids and handed down from parents to children.",
+        "alt": "An old photograph of the sayyids in our fathers' days, sitting together around a large pot of food"
+      },
+      "now": {
+        "tag": "Now",
+        "when": "1447 AH, 2026 CE",
+        "what": "The Descendants of Imam al-Kadhim (AS) Association begins its work in the al-Iskan quarter of Holy Najaf.",
+        "alt": "The sayyids, sons of Sayyid Nasir, gathered with their children in their majlis today"
+      }
+    },
+    "founders": {
+      "label": "The Founders",
+      "name": "Sons of Sayyid Nasir",
+      "text": "The sons and grandsons of Sayyid Nasir, Musawi sayyids, who carried on their fathers' gathering and built this association upon it, in service of their grandfather Imam al-Kadhim (AS) and the Ahl al-Bayt (AS)."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "statement": "To keep the voice of Imam al-Kadhim (AS) alive within us: patience in the face of injustice, prostration that no shackle can interrupt, and generosity that walks by night without a name. We hold mourning gatherings in loyalty to the Ahl al-Bayt (AS), raise our children in them as we were raised, and open our doors to every lover, servant and visitor.",
+      "revival": {
+        "name": "Revival",
+        "text": "Holding mourning gatherings in their seasons, and keeping the memory of the Ahl al-Bayt (AS) alive in homes and hearts."
+      },
+      "loyalty": {
+        "name": "Loyalty",
+        "text": "Preserving the legacy of our forefathers and passing the gathering on to our children as it reached us."
+      },
+      "service": {
+        "name": "Service",
+        "text": "Welcoming and serving the mourners, and following the way of the Ahl al-Bayt (AS) in generosity and restraint of anger."
+      }
+    },
+    "majalis": {
+      "title": "Our Gatherings",
+      "intro": "The mourning occasions the association observes every year:",
+      "kadhim": {
+        "day": "25",
+        "month": "Rajab",
+        "title": "Anniversary of the Martyrdom of Imam Musa al-Kadhim (AS)",
+        "text": "A mourning gathering recalling the Imam's suffering in the prisons of Baghdad, and his patience and steadfastness unto martyrdom."
+      },
+      "ashura": {
+        "day": "1–10",
+        "month": "Muharram",
+        "title": "The First Ten Days of Sacred Muharram",
+        "text": "Reviving the ten nights of Ashura with recitation and Husseini mourning gatherings, through to the night of the tenth."
+      },
+      "night": {
+        "day": "A night",
+        "month": "of Muharram",
+        "title": "A Mourning Gathering on One Night of Sacred Muharram",
+        "text": "An annual gathering the association holds on one night of the month of grief, in loyalty to the Master of Martyrs (AS)."
+      }
+    }
+  }
+}

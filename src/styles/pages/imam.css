@@ -1,0 +1,429 @@
+/* ==========================================================================
+   صفحة الإمام: خط في الوسط تتفرع منه الأبواب يمينًا ويسارًا
+   ========================================================================== */
+
+.vitals {
+  margin-block-end: var(--sp-9);
+}
+
+.vitals__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding-block: var(--sp-6);
+}
+
+.vitals__item {
+  display: grid;
+  align-content: start;
+  gap: var(--sp-1);
+  padding-inline: var(--sp-5);
+  text-align: center;
+}
+
+.vitals__item + .vitals__item {
+  border-inline-start: 1px solid var(--ink-600);
+}
+
+.vitals__item dt {
+  color: var(--text-faint);
+  font-size: var(--fs-200);
+}
+
+.vitals__item dd {
+  display: grid;
+  gap: var(--sp-1);
+  color: var(--gold-300);
+  font-size: var(--fs-500);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.vitals__item dd span {
+  color: var(--text-muted);
+  font-size: var(--fs-200);
+  font-weight: 400;
+}
+
+@media (max-width: 63.99em) {
+  .vitals__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--sp-6);
+  }
+  .vitals__item:nth-child(3) {
+    border-inline-start: 0;
+  }
+}
+
+@media (max-width: 29.99em) {
+  .vitals__list {
+    grid-template-columns: 1fr;
+  }
+  .vitals__item + .vitals__item {
+    border-inline-start: 0;
+    border-block-start: 1px solid var(--ink-600);
+    padding-block-start: var(--sp-5);
+  }
+}
+
+.branches {
+  --spine-w: 7rem;
+  --node: 26px;
+  --node-y: 3.4rem;
+  --overlap: 9rem;
+  position: relative;
+}
+
+.branches__inner {
+  position: relative;
+}
+
+.branches__list {
+  margin: 0;
+  padding: 0;
+}
+
+.spine {
+  position: absolute;
+  inset-block: 0;
+  left: 50%;
+  inline-size: 3px;
+  translate: -50% 0;
+  pointer-events: none;
+}
+
+.spine__track,
+.spine__thread {
+  position: absolute;
+  inset-block: 0;
+  left: 0;
+  inline-size: 100%;
+}
+
+.spine__track {
+  left: 1px;
+  inline-size: 1px;
+  background: linear-gradient(180deg, transparent, var(--ink-500) 4%, var(--ink-500) 96%, transparent);
+}
+
+.spine__thread {
+  background: var(--grad-blood-line);
+  transform-origin: top;
+  transform: scaleY(var(--p, 1));
+  box-shadow: 0 0 12px rgba(176, 34, 43, 0.45);
+}
+
+.spine__tip {
+  position: absolute;
+  inset-block-start: 0;
+  left: 50%;
+  display: none;
+  inline-size: 11px;
+  block-size: 15px;
+  margin-block-start: -6px;
+  border-radius: 50% 50% 50% 50% / 38% 38% 62% 62%;
+  background: radial-gradient(circle at 35% 62%, #f0b2a6 0 9%, #b0222b 22%, #5c0a10 75%);
+  box-shadow: 0 0 14px rgba(176, 34, 43, 0.7);
+  translate: -50% 0;
+}
+
+.js .spine__tip {
+  display: block;
+}
+
+.branch {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr var(--spine-w) 1fr;
+  pointer-events: none;
+}
+
+.branch + .branch {
+  margin-block-start: calc(-1 * var(--overlap));
+}
+
+.branch__card {
+  grid-column: 1;
+  grid-row: 1;
+  pointer-events: auto;
+}
+
+.branch {
+  scroll-margin-block-start: calc(var(--header-h) + var(--sp-8));
+}
+
+.branch:nth-child(even) .branch__card {
+  grid-column: 3;
+}
+
+.branch__node {
+  position: absolute;
+  inset-block-start: calc(var(--node-y) - var(--node) / 2);
+  left: 50%;
+  z-index: 1;
+  inline-size: var(--node);
+  block-size: var(--node);
+  translate: -50% 0;
+}
+
+.branch__node svg {
+  inline-size: 100%;
+  block-size: 100%;
+  fill: var(--ink-950);
+  stroke: var(--gold-700);
+  stroke-width: 1.3;
+  transition: fill 600ms var(--ease-solemn), stroke 600ms var(--ease-solemn), transform 900ms var(--ease-solemn);
+}
+
+.branch.is-lit .branch__node svg {
+  fill: var(--blood-500);
+  stroke: var(--gold-300);
+  transform: rotate(45deg);
+}
+
+.branch__arm {
+  position: absolute;
+  inset-block-start: calc(var(--node-y) - 0.5px);
+  left: 50%;
+  inline-size: calc(var(--spine-w) / 2);
+  block-size: 1px;
+  background: linear-gradient(90deg, var(--gold-500), var(--gold-700));
+  transform-origin: left;
+}
+
+.branch:nth-child(even) .branch__arm {
+  left: auto;
+  right: 50%;
+  background: linear-gradient(-90deg, var(--gold-500), var(--gold-700));
+  transform-origin: right;
+}
+
+.branch:hover .branch__node svg {
+  stroke: var(--gold-100);
+}
+
+.branch__title {
+  margin-block-end: var(--sp-4);
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--gold-300);
+}
+
+.branch__card .prose {
+  max-inline-size: none;
+}
+
+.branch__card strong {
+  color: var(--gold-300);
+}
+
+.branch__intro {
+  color: var(--text-muted);
+}
+
+.branch__lineage {
+  margin-block-start: var(--sp-5);
+  padding-block: var(--sp-3);
+  border-block: 1px solid rgba(138, 106, 43, 0.4);
+  color: var(--gold-300);
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+}
+
+.branch__lineage span {
+  color: var(--text-muted);
+  font-size: var(--fs-200);
+  font-weight: 400;
+}
+
+.branch__note {
+  margin-block-start: var(--sp-3);
+  color: var(--text-muted);
+  font-size: var(--fs-200);
+  text-align: center;
+}
+
+.branch__quote {
+  padding-block: var(--sp-2);
+  color: var(--gold-300);
+  font-size: var(--fs-500);
+  line-height: 1.9;
+  text-align: center;
+}
+
+.branch__witness {
+  margin-block-start: var(--sp-5);
+  padding: var(--sp-5);
+  border-inline-start: 2px solid var(--blood-500);
+  background: rgba(46, 4, 7, 0.35);
+}
+
+.branch__witness blockquote {
+  color: var(--bone-100);
+  font-size: var(--fs-400);
+  line-height: 1.95;
+}
+
+.branch__witness figcaption {
+  margin-block-start: var(--sp-2);
+  color: var(--text-muted);
+  font-size: var(--fs-200);
+}
+
+.titles {
+  display: grid;
+  margin: var(--sp-4) 0 0;
+}
+
+.titles__item {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: var(--sp-4);
+  align-items: baseline;
+  padding-block: var(--sp-3);
+  border-block-start: 1px solid var(--ink-600);
+}
+
+.titles__item dt {
+  font-family: var(--font-display);
+  font-size: var(--fs-500);
+  color: var(--gold-500);
+  line-height: 1.5;
+}
+
+.titles__item dd {
+  color: var(--text);
+}
+
+/* قائمة بنجوم ثمانية بدل النقاط */
+.deeds {
+  display: grid;
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0 0;
+  padding: 0;
+}
+
+.deeds li {
+  position: relative;
+  padding-inline-start: var(--sp-6);
+}
+
+.deeds li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0.2rem;
+  inset-block-start: 0.75em;
+  inline-size: 12px;
+  block-size: 12px;
+  background: var(--gold-500);
+  -webkit-mask: var(--star-mask) center / contain no-repeat;
+  mask: var(--star-mask) center / contain no-repeat;
+}
+
+@media (max-width: 63.99em) {
+  .branches {
+    --spine-w: 3rem;
+    --overlap: 0rem;
+  }
+  .spine {
+    left: auto;
+    right: calc(var(--spine-w) / 2);
+    translate: 50% 0;
+  }
+  .branch {
+    grid-template-columns: var(--spine-w) 1fr;
+    margin-block-end: var(--sp-7);
+  }
+  .branch__card,
+  .branch:nth-child(even) .branch__card {
+    grid-column: 2;
+  }
+  .branch__node {
+    left: auto;
+    right: calc(var(--spine-w) / 2);
+    translate: 50% 0;
+  }
+  .branch__arm,
+  .branch:nth-child(even) .branch__arm {
+    left: auto;
+    right: calc(var(--spine-w) / 2);
+    inline-size: calc(var(--spine-w) / 2);
+    background: linear-gradient(-90deg, var(--gold-500), var(--gold-700));
+    transform-origin: right;
+  }
+  .titles__item {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* شريط التنقل الجانبي على الشاشات العريضة */
+.rail {
+  display: none;
+}
+
+@media (min-width: 88em) {
+  .rail {
+    position: fixed;
+    inset-inline-end: var(--sp-5);
+    inset-block-start: 50%;
+    z-index: 10;
+    display: block;
+    translate: 0 -50%;
+  }
+  .rail ol {
+    display: grid;
+    gap: var(--sp-1);
+    margin: 0;
+    padding: 0;
+  }
+  .rail a {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    min-block-size: 44px;
+    color: var(--text-faint);
+    font-size: var(--fs-100);
+    text-decoration: none;
+  }
+  .rail svg {
+    inline-size: 14px;
+    block-size: 14px;
+    flex: none;
+    fill: transparent;
+    stroke: var(--gold-700);
+    stroke-width: 1.4;
+    transition: fill 400ms var(--ease-solemn), transform 600ms var(--ease-solemn);
+  }
+  .rail span {
+    padding: 0.1em 0.6em;
+    background: var(--ink-950);
+    white-space: nowrap;
+    opacity: 0;
+    translate: 6px 0;
+    transition: opacity 300ms var(--ease-solemn), translate 300ms var(--ease-solemn);
+  }
+  .rail a:hover span,
+  .rail a:focus-visible span,
+  .rail a.is-current span {
+    opacity: 1;
+    translate: 0 0;
+  }
+  .rail a.is-current {
+    color: var(--gold-300);
+  }
+  .rail a.is-current svg {
+    fill: var(--blood-500);
+    stroke: var(--gold-300);
+    transform: rotate(45deg);
+  }
+}
+
+.next-chapter {
+  display: flex;
+  justify-content: center;
+  margin-block-start: var(--sp-9);
+}

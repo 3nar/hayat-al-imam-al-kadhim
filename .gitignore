@@ -1,0 +1,26 @@
+# الحزم والبناء
+node_modules/
+dist/
+.vite/
+
+# السجلات
+*.log
+npm-debug.log*
+
+# ملفات النظام والمحررات
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# ملفات Office المؤقتة (تظهر حين يكون الوورد مفتوحًا)
+~$*
+
+# صفحات مولّدة مؤقتًا أثناء البناء من src/pages وsrc/locales
+/src/*.html
+/src/en/
+/src/ru/
+/src/fa/
+/src/az/

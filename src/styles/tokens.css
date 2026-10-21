@@ -1,0 +1,141 @@
+/* ==========================================================================
+   هوية هيئة أحفاد الإمام الكاظم (ع) — الرموز (Design tokens)
+   كل لون له معنى: السواد للحِداد، الأحمر للدم والشهادة،
+   الذهب للقداسة والخط، الأخضر لنسب السادة.
+   ========================================================================== */
+
+/* الخطوط محلية في public/fonts وتُعرَّف في src/partials/head.html */
+
+:root {
+  color-scheme: dark;
+
+  /* ---------- الألوان الأساسية ---------- */
+  /* السواد: مأخوذ من ظلال صور السجن، أسود يميل للدم لا للرمادي */
+  --ink-950: #040203;
+  --ink-900: #070405;
+  --ink-800: #0f0909;
+  --ink-700: #181011;
+  --ink-600: #2a1b1c;
+  --ink-500: #3d2a2b;
+
+  /* الدم */
+  --blood-950: #1c0204;
+  --blood-900: #2e0407;
+  --blood-700: #5c0a10;
+  --blood-500: #8e1119;
+  --blood-400: #b0222b;
+  --blood-300: #d85a55; /* أحمر للنص فقط: تباين 5.3:1 على السواد */
+
+  /* الذهب: خيط التطريز على رايات العزاء */
+  --gold-800: #5e4719;
+  --gold-700: #8a6a2b;
+  --gold-500: #c9a24a;
+  --gold-300: #e7cd8a;
+  --gold-100: #f6ead0;
+
+  /* خضرة السادة: لون العمامة، مخصّص لكل ما يخص النسب */
+  --green-900: #0b1f14;
+  --green-800: #12301f;
+  --green-600: #1f5038;
+  --green-400: #3f7d5c;
+  --green-300: #86b99a;
+
+  /* الرَّق: لون النص، عظمي دافئ وليس أبيض */
+  --bone-100: #ede3d1;
+  --bone-300: #b9aa94;
+  --bone-500: #7e715f;
+
+  /* ---------- الأدوار ---------- */
+  --bg: var(--ink-900);
+  --surface: var(--ink-800);
+  --surface-raised: var(--ink-700);
+  --rule: var(--ink-600);
+  --text: var(--bone-100);
+  --text-muted: var(--bone-300);
+  --text-faint: var(--bone-500);
+  --accent: var(--gold-500);
+  --accent-strong: var(--gold-300);
+  --martyr: var(--blood-500);
+  --lineage: var(--green-300);
+  --focus: var(--gold-300);
+
+  /* ---------- التدرجات ---------- */
+  --grad-gold: linear-gradient(176deg, #f6e3a8 0%, #e2c174 28%, #c9a24a 52%, #a07c33 78%, #6e5320 100%);
+  --grad-gold-line: linear-gradient(90deg, transparent, var(--gold-700) 18%, var(--gold-300) 50%, var(--gold-700) 82%, transparent);
+  --grad-blood: linear-gradient(180deg, #c8323a 0%, #8e1119 35%, #5c0a10 70%, #2e0407 100%);
+  --grad-blood-line: linear-gradient(180deg, var(--gold-500) 0%, var(--blood-400) 40%, var(--blood-700) 100%);
+  --grad-green: linear-gradient(180deg, var(--green-400), var(--green-800));
+  --grad-night: radial-gradient(120% 70% at 50% -10%, rgba(92, 10, 16, 0.32), transparent 60%),
+    linear-gradient(180deg, var(--ink-900), var(--ink-950));
+  --grad-veil-start: linear-gradient(to left, transparent 0%, rgba(4, 2, 3, 0.25) 35%, rgba(4, 2, 3, 0.86) 70%, rgba(4, 2, 3, 0.94) 100%);
+  --grad-veil-bottom: linear-gradient(180deg, transparent 55%, rgba(4, 2, 3, 0.7) 82%, var(--ink-900) 100%);
+
+  /* ---------- الخطوط ---------- */
+  --font-display: "Aref Ruqaa", "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif; /* الرقعة: خط اللافتات الحسينية */
+  --font-text: "Amiri", "Noto Naskh Arabic", "Traditional Arabic", "Geeza Pro", serif; /* النسخ: خط المصحف والكتاب */
+
+  /* سلّم الأحجام: نسبة 1.25 تقريبًا، قاعدة 19px لأن النسخ العربي أصغر بصريًا من اللاتيني */
+  --fs-100: 0.875rem; /* 15.2px  تعليق، أصغر حجم مسموح */
+  --fs-200: 0.9375rem; /* 16.4px ملصقات وبيانات */
+  --fs-300: 1.0625rem; /* 18.6px نص أساسي (موبايل) */
+  --fs-350: 1.1875rem; /* 20.8px نص أساسي (حاسبة) */
+  --fs-400: clamp(1.25rem, 1.15rem + 0.4vw, 1.4375rem); /* 21–25px مقدمة */
+  --fs-500: clamp(1.4375rem, 1.25rem + 0.7vw, 1.75rem); /* 25–30px عنوان فرعي */
+  --fs-600: clamp(1.75rem, 1.45rem + 1.2vw, 2.375rem); /* 30–41px عنوان قسم */
+  --fs-700: clamp(2.25rem, 1.7rem + 2.2vw, 3.5rem); /* 39–61px عنوان صفحة */
+  --fs-800: clamp(2.875rem, 2rem + 3.6vw, 5.25rem); /* 50–92px عنوان كبير */
+  --fs-display: clamp(3.25rem, min(1.2rem + 7.6vw, 13vh), 9.25rem); /* 57–148px اسم الهيئة، يتبع ارتفاع الشاشة أيضًا حتى يظهر البطل كاملًا */
+
+  --lh-text: 2; /* النسخ مع التشكيل يحتاج سطرًا واسعًا */
+  --lh-heading: 1.45;
+  --lh-display: 1.3;
+  --measure: 34em; /* ≈ 62 حرفًا عربيًا */
+
+  /* ---------- الأبعاد والمسافات (شبكة 4px) ---------- */
+  --sp-1: 0.25rem; /* 4 */
+  --sp-2: 0.5rem; /* 8 */
+  --sp-3: 0.75rem; /* 12 */
+  --sp-4: 1rem; /* 16 */
+  --sp-5: 1.5rem; /* 24 */
+  --sp-6: 2rem; /* 32 */
+  --sp-7: 3rem; /* 48 */
+  --sp-8: 4rem; /* 64 */
+  --sp-9: 6rem; /* 96 */
+  --sp-10: 8rem; /* 128 */
+  --sp-11: 12rem; /* 192 */
+
+  --container: 75rem; /* 1200 */
+  --container-narrow: 44rem; /* 704: عمود القراءة */
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 3rem); /* 16 → 48 */
+  --header-h: 4.5rem; /* 72 */
+  --section-gap: clamp(5rem, 3rem + 8vw, 10rem);
+
+  /* ---------- الإطارات ---------- */
+  --frame-line: 1px solid var(--gold-700);
+  --frame-inset: 6px; /* المسافة بين خطّي الإطار المزدوج */
+  --frame-pad: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  --ornament: 14px; /* حجم نجمة الزاوية */
+  --radius: 0; /* لا زوايا دائرية: الحِداد صارم */
+  /* عقد مدبّب كأواوين الحضرة الكاظمية، نسبة 4:5 */
+  --arch-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 125' preserveAspectRatio='none'%3E%3Cpath d='M0 125V44C0 20 30 12 50 0C70 12 100 20 100 44V125Z'/%3E%3C/svg%3E");
+  --star-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-11 -11 22 22'%3E%3Cpolygon points='0,-10 2.93,-7.07 7.07,-7.07 7.07,-2.93 10,0 7.07,2.93 7.07,7.07 2.93,7.07 0,10 -2.93,7.07 -7.07,7.07 -7.07,2.93 -10,0 -7.07,-2.93 -7.07,-7.07 -2.93,-7.07'/%3E%3C/svg%3E");
+
+  /* ---------- الحركة ---------- */
+  --ease-solemn: cubic-bezier(0.22, 0.61, 0.36, 1); /* power2.out: هبوط هادئ بلا ارتداد */
+  --ease-breath: cubic-bezier(0.45, 0.05, 0.55, 0.95); /* sine.inOut: حركة محيطية */
+  --dur-quick: 200ms; /* استجابة اللمس والتمرير */
+  --dur-reveal: 900ms; /* ظهور المحتوى */
+  --dur-ceremony: 1800ms; /* افتتاحية الصفحة */
+
+  --z-canvas: 1;
+  --z-content: 2;
+  --z-header: 50;
+  --z-menu: 60;
+  --z-skip: 100;
+}
+
+@media (min-width: 64em) {
+  :root {
+    --header-h: 5.25rem; /* 84 */
+  }
+}

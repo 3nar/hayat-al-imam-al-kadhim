@@ -1,0 +1,249 @@
+/* ==========================================================================
+   اللغات: مبدّل اللغة، والنص العربي الأصلي، وتعديلات الاتجاه من اليسار لليمين
+
+   الأنماط الأساسية مكتوبة للعربية (RTL) وبخصائص منطقية قدر الإمكان.
+   هنا فقط ما يتعلّق بالصورة أو بالحركة ولا يقلبه المتصفح تلقائيًا.
+   ========================================================================== */
+
+/* ---------- مبدّل اللغة ---------- */
+.site-header__tools {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.lang {
+  position: relative;
+}
+
+.lang__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  min-block-size: 44px;
+  padding: 0 var(--sp-3);
+  border: 1px solid transparent;
+  color: var(--bone-300);
+  font-size: var(--fs-200);
+  font-weight: 700;
+  list-style: none;
+  cursor: pointer;
+  transition: color var(--dur-quick) var(--ease-solemn), border-color var(--dur-quick) var(--ease-solemn);
+}
+
+.lang__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.lang__toggle:hover,
+.lang[open] .lang__toggle {
+  color: var(--gold-300);
+  border-color: var(--gold-700);
+}
+
+.lang__icon {
+  inline-size: 18px;
+  block-size: 18px;
+}
+
+.lang__list {
+  position: absolute;
+  inset-block-start: calc(100% + var(--sp-2));
+  inset-inline-end: 0;
+  z-index: 5;
+  display: grid;
+  min-inline-size: 11rem;
+  margin: 0;
+  padding: var(--sp-2) 0;
+  border: 1px solid var(--gold-700);
+  background: var(--ink-950);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+}
+
+.lang__list a,
+.menu__langs a {
+  display: flex;
+  align-items: center;
+  min-block-size: 44px;
+  padding: 0 var(--sp-4);
+  color: var(--bone-300);
+  text-decoration: none;
+}
+
+/* كل اسم لغة بخط لغته */
+.lang__list a:lang(ar),
+.lang__list a:lang(fa),
+.menu__langs a:lang(ar),
+.menu__langs a:lang(fa) {
+  font-family: "Amiri", serif;
+  font-size: var(--fs-300);
+}
+
+.lang__list a:lang(en),
+.lang__list a:lang(ru),
+.lang__list a:lang(az),
+.menu__langs a:lang(en),
+.menu__langs a:lang(ru),
+.menu__langs a:lang(az) {
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: var(--fs-300);
+}
+
+.lang__list a:hover,
+.menu__langs a:hover {
+  color: var(--gold-100);
+  background: rgba(138, 106, 43, 0.15);
+}
+
+.lang__list a[aria-current="true"],
+.menu__langs a[aria-current="true"] {
+  color: var(--gold-300);
+  box-shadow: inset 2px 0 0 var(--blood-400);
+}
+
+@media (max-width: 47.99em) {
+  /* على الموبايل تُختار اللغة من القائمة */
+  .lang {
+    display: none;
+  }
+}
+
+.menu__langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1) var(--sp-2);
+  margin: 0 0 var(--sp-4);
+  padding: 0;
+}
+
+.menu__langs a {
+  padding: 0 var(--sp-3);
+  border: 1px solid var(--ink-600);
+}
+
+/* على الشاشات الضيقة يلتف اسم الهيئة في الترويسة بدل أن يدفع زر القائمة خارجها */
+@media (max-width: 47.99em) {
+  .brand {
+    min-inline-size: 0;
+  }
+  .brand__name {
+    white-space: normal;
+    font-size: clamp(1.05rem, 4.6vw, 1.4rem);
+    line-height: 1.2;
+  }
+}
+
+/* ---------- النص العربي الأصلي فوق الترجمة (الدعاء والزيارة) ---------- */
+.original {
+  font-family: "Amiri", serif;
+  font-size: 0.82em;
+  line-height: 2;
+  color: var(--gold-500);
+  opacity: 0.85;
+  margin-block-end: var(--sp-3);
+}
+
+.original:empty {
+  display: none;
+}
+
+/* ---------- الإنكليزية والروسية والأذرية ---------- */
+:root[dir="ltr"] {
+  --font-display: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-text: "EB Garamond", Georgia, "Times New Roman", serif;
+  --lh-text: 1.7;
+  --lh-heading: 1.25;
+  --lh-display: 1.08;
+  --measure: 36em;
+  --fs-display: clamp(2.75rem, min(1rem + 5.4vw, 10vh), 7rem);
+  --fs-800: clamp(2.5rem, 1.7rem + 2.9vw, 4.5rem);
+  --fs-700: clamp(2rem, 1.5rem + 2vw, 3.25rem);
+}
+
+[dir="ltr"] .hero__title {
+  /* يُكتب الاسم من اليسار إلى اليمين */
+  -webkit-mask-image: linear-gradient(to right, #000 calc(110% - var(--ink) * 1.2 - 12%), transparent calc(110% - var(--ink) * 1.2));
+  mask-image: linear-gradient(to right, #000 calc(110% - var(--ink) * 1.2 - 12%), transparent calc(110% - var(--ink) * 1.2));
+}
+
+@media (max-width: 47.99em) {
+  [dir="ltr"] .hero__title {
+    font-size: clamp(2.25rem, 10.5vw, 3.5rem);
+  }
+}
+
+[dir="ltr"] .hero__city,
+[dir="ltr"] .hero__quarter,
+[dir="ltr"] .hero__family {
+  line-height: 1.3;
+}
+
+[dir="ltr"] .nav-list a::after {
+  transform-origin: left;
+}
+
+[dir="ltr"] .chapter::before {
+  background: linear-gradient(to right, rgba(92, 10, 16, 0.32), transparent 70%);
+}
+
+[dir="ltr"] .lang__list a[aria-current="true"],
+[dir="ltr"] .menu__langs a[aria-current="true"] {
+  box-shadow: inset 2px 0 0 var(--blood-400);
+}
+
+[dir="ltr"] .launch__line::before {
+  transform-origin: left;
+  background: linear-gradient(to right, var(--gold-700), var(--green-400));
+}
+
+@media (max-width: 47.99em) {
+  [dir="ltr"] .launch__line::before {
+    transform-origin: top;
+    background: linear-gradient(180deg, var(--gold-700), var(--green-400));
+  }
+}
+
+/* فروع صفحة الإمام: في الحاسبة يتبادل الجانبان */
+@media (min-width: 64em) {
+  [dir="ltr"] .branch__arm {
+    left: auto;
+    right: 50%;
+    background: linear-gradient(-90deg, var(--gold-500), var(--gold-700));
+    transform-origin: right;
+  }
+  [dir="ltr"] .branch:nth-child(even) .branch__arm {
+    right: auto;
+    left: 50%;
+    background: linear-gradient(90deg, var(--gold-500), var(--gold-700));
+    transform-origin: left;
+  }
+}
+
+/* وفي الموبايل ينتقل الخط إلى اليسار */
+@media (max-width: 63.99em) {
+  [dir="ltr"] .spine,
+  [dir="ltr"] .branch__node {
+    right: auto;
+    left: calc(var(--spine-w) / 2);
+    translate: -50% 0;
+  }
+  [dir="ltr"] .branch__arm,
+  [dir="ltr"] .branch:nth-child(even) .branch__arm {
+    right: auto;
+    left: calc(var(--spine-w) / 2);
+    background: linear-gradient(90deg, var(--gold-500), var(--gold-700));
+    transform-origin: left;
+  }
+}
+
+/* الأسماء الطويلة في اللغات الأخرى: التنقل الكامل من الشاشات الأعرض */
+@media (min-width: 64em) and (max-width: 79.99em) {
+  :root[lang="ru"] .nav-list,
+  :root[lang="az"] .nav-list {
+    gap: var(--sp-3);
+  }
+  :root[lang="ru"] .nav-list a,
+  :root[lang="az"] .nav-list a {
+    font-size: var(--fs-100);
+  }
+}
